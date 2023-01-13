@@ -1,7 +1,11 @@
 import React from 'react';
 
+import placeHolderImage from "../images/course-tree-placeholder-image.jpg";
+
 export default function CourseTree() {
     return (
-        <h1>CourseTree Component</h1>
+        <section>
+            <img src={placeHolderImage} style={{width: '80%'}}></img>
+        </section>
     );
 }
