@@ -10,11 +10,28 @@ import CourseSelector from "./components/CourseSelector";
 function App() {
     let [isCourseSelectorDisplayed, setIsCourseSelectorDisplayed] = useState(false);
 
+    const openCourseSelector = () => {
+        setIsCourseSelectorDisplayed(true)
+    };
+
+    const closeCourseSelector = () => {
+        setIsCourseSelectorDisplayed(false)
+    };
+
+    const addCourse = () => {
+        closeCourseSelector();
+        // TO DO: handle adding the course to the list of courses
+    };
+
     return (
         <section>
             <Header/>
-            <CoursePlan displayCourseSelector={() => setIsCourseSelectorDisplayed(true)}/>
-            {isCourseSelectorDisplayed ? <CourseSelector/> : <></>}
+            <CoursePlan openCourseSelector={openCourseSelector}/>
+            {
+                isCourseSelectorDisplayed
+                    ? <CourseSelector addCourse={addCourse}/>
+                    : <></>
+            }
         </section>
     );
 }
