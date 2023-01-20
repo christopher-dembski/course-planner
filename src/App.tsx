@@ -11,11 +11,11 @@ function App() {
     let [isCourseSelectorDisplayed, setIsCourseSelectorDisplayed] = useState(false);
 
     const openCourseSelector = () => {
-        setIsCourseSelectorDisplayed(true)
+        setIsCourseSelectorDisplayed(true);
     };
 
     const closeCourseSelector = () => {
-        setIsCourseSelectorDisplayed(false)
+        setIsCourseSelectorDisplayed(false);
     };
 
     const addCourse = () => {
