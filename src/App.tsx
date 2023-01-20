@@ -27,11 +27,7 @@ function App() {
         <section>
             <Header/>
             <CoursePlan openCourseSelector={openCourseSelector}/>
-            {
-                isCourseSelectorDisplayed
-                    ? <CourseSelector addCourse={addCourse}/>
-                    : <></>
-            }
+            {isCourseSelectorDisplayed && <CourseSelector addCourse={addCourse}/>}
         </section>
     );
 }
