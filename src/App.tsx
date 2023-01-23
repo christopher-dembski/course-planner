@@ -7,17 +7,17 @@ import CourseSelector from './components/CourseSelector';
 import './App.css';
 
 import coursesInfo from './coursesInfo';
-import _coursePlans from './coursePlans';
+import _coursePlans from './coursePlans';  // eventually will be loaded from local-storage and saved between sessions
 
 
 function App() {
     let [isCourseSelectorDisplayed, setIsCourseSelectorDisplayed] = useState(false);
-    let [termNumber, setTermNumber] = useState(0);  // term number to add course to (0 is a placeholder)
-    let [coursePlanNumber, setCoursePlanNumber] = useState(0);  // number of current course plan to display
-
     let [coursePlans, setCoursePlans] = useState(_coursePlans);
+    let [coursePlanNumber, setCoursePlanNumber] = useState(0);  // index of current course plan to display
+    let [termNumber, setTermNumber] = useState(0);  // index for term to add course to
 
-    const selectCourse = (termNumberToAddCourseFor: number) => {
+
+    const openCourseSelector = (termNumberToAddCourseFor: number) => {
         setTermNumber(termNumberToAddCourseFor);
         setIsCourseSelectorDisplayed(true);
     };
@@ -38,9 +38,12 @@ function App() {
                 coursePlans={coursePlans}
                 coursePlanNumber={coursePlanNumber}
                 setCoursePlanNumber={setCoursePlanNumber}
-                selectCourse={selectCourse}
+                selectCourse={openCourseSelector}
             />
-            {isCourseSelectorDisplayed && <CourseSelector addCourse={addCourse}/>}
+            {
+                isCourseSelectorDisplayed &&
+                <CourseSelector coursesInfo={coursesInfo} addCourse={addCourse}/>
+            }
         </section>
     );
 }

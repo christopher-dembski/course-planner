@@ -1,14 +1,18 @@
 import React from 'react';
 
-import './CourseSelector.css';
+import {CoursesInfo} from '../types';
 
 import placeHolderImage from '../images/course-tree-placeholder-image.jpg';
 
+import './CourseSelector.css';
+
+
 interface Props {
-    addCourse: (courseId: string) => void
+    addCourse: (courseId: string) => void,
+    coursesInfo: CoursesInfo
 }
 
-export default function CourseSelector({addCourse}: Props) {
+export default function CourseSelector({addCourse, coursesInfo}: Props) {
     return (
         <section id='course-selector-popup'>
             <h1>CourseSelector Component</h1>
@@ -16,7 +20,7 @@ export default function CourseSelector({addCourse}: Props) {
                 <img src={placeHolderImage} style={{width: '80%'}}></img>
             </section>
             {/* 9999 is a placeholder for the course to add */}
-            <button onClick={() => addCourse('EECS-9999')}>Add course</button>
+            <button onClick={() => addCourse('EECS-1015')}>Add course</button>
         </section>
     );
 }
