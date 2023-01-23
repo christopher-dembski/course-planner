@@ -24,7 +24,11 @@ function App() {
 
     const addCourse = (courseId: string) => {
         setIsCourseSelectorDisplayed(false);
-        // TO DO: handle adding the course to the list of courses
+        setCoursePlans((prevCoursePlans) => {
+            const newCoursePlans = JSON.parse(JSON.stringify(prevCoursePlans));
+            newCoursePlans[coursePlanNumber][termNumber].push(courseId);
+            return newCoursePlans;
+        });
     };
 
     return (
