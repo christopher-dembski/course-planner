@@ -1,32 +1,41 @@
 import React, {useState} from 'react';
 
-import Header from "./components/Header";
-import CoursePlan from "./components/CoursePlan";
+import Header from './components/Header';
+import CoursePlan from './components/CoursePlan';
+import CourseSelector from './components/CourseSelector';
 
 import './App.css';
-import CourseSelector from "./components/CourseSelector";
+
+import coursesInfo from './coursesInfo';
+import _coursePlans from './coursePlans';
 
 
 function App() {
     let [isCourseSelectorDisplayed, setIsCourseSelectorDisplayed] = useState(false);
+    let [termNumber, setTermNumber] = useState(0);  // term number to add course to (0 is a placeholder)
+    let [coursePlanNumber, setCoursePlanNumber] = useState(0);  // number of current course plan to display
 
-    const openCourseSelector = () => {
+    let [coursePlans, setCoursePlans] = useState(_coursePlans);
+
+    const selectCourse = (termNumberToAddCourseFor: number) => {
+        setTermNumber(termNumberToAddCourseFor);
         setIsCourseSelectorDisplayed(true);
     };
 
-    const closeCourseSelector = () => {
+    const addCourse = (courseId: string) => {
         setIsCourseSelectorDisplayed(false);
-    };
-
-    const addCourse = () => {
-        closeCourseSelector();
         // TO DO: handle adding the course to the list of courses
     };
 
     return (
         <section>
             <Header/>
-            <CoursePlan openCourseSelector={openCourseSelector}/>
+            <CoursePlan
+                coursePlans={coursePlans}
+                coursePlanNumber={coursePlanNumber}
+                setCoursePlanNumber={setCoursePlanNumber}
+                selectCourse={selectCourse}
+            />
             {isCourseSelectorDisplayed && <CourseSelector addCourse={addCourse}/>}
         </section>
     );
