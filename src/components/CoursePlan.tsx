@@ -3,12 +3,12 @@ import {CoursePlans} from '../types';
 
 interface Props {
     coursePlans: CoursePlans,
-    selectCourse: (termNumberToAddCourseFor: number) => void,
+    openCourseSelector: (termNumberToAddCourseFor: number) => void,
     coursePlanNumber: number,
     setCoursePlanNumber: (coursePLanNumber: number) => void
 }
 
-export default function CoursePlan({coursePlans,  coursePlanNumber, setCoursePlanNumber, selectCourse}: Props) {
+export default function CoursePlan({coursePlans,  coursePlanNumber, setCoursePlanNumber, openCourseSelector}: Props) {
     return (
         <section>
             <h1>CoursePlan Component</h1>
@@ -16,7 +16,7 @@ export default function CoursePlan({coursePlans,  coursePlanNumber, setCoursePla
             <p>Discrete Math - EECS 1019</p>
             <p>Differential Calculus - MATH 1013</p>
             {/* 0 is a placeholder for the term number to add a course for */}
-            <button onClick={() => selectCourse(0)}>Add Course [+]</button>
+            <button onClick={() => openCourseSelector(0)}>Add Course [+]</button>
         </section>
     );
 }

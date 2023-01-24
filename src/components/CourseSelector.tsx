@@ -19,7 +19,7 @@ export default function CourseSelector({addCourse, coursesInfo}: Props) {
             <section>
                 <img src={placeHolderImage} style={{width: '80%'}}></img>
             </section>
-            {/* 9999 is a placeholder for the course to add */}
+            {/* EECS-1015 is a placeholder for the course to add */}
             <button onClick={() => addCourse('EECS-1015')}>Add course</button>
         </section>
     );

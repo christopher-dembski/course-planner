@@ -38,11 +38,14 @@ function App() {
                 coursePlans={coursePlans}
                 coursePlanNumber={coursePlanNumber}
                 setCoursePlanNumber={setCoursePlanNumber}
-                selectCourse={openCourseSelector}
+                openCourseSelector={openCourseSelector}
             />
             {
                 isCourseSelectorDisplayed &&
-                <CourseSelector coursesInfo={coursesInfo} addCourse={addCourse}/>
+                <CourseSelector
+                    coursesInfo={coursesInfo}
+                    addCourse={addCourse}
+                />
             }
         </section>
     );
