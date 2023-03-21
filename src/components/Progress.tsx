@@ -9,9 +9,10 @@ interface Props {
 
 export default function Progress({coursePlans, coursesInfo}: Props) {
     return (
-        <section>
-            <h1>Progress</h1>
-            <p>Program requirements met... Program requirements not met...</p>
-        </section>
+        <></>
+        // <section>
+        //     <h1>Progress</h1>
+        //     <p>Program requirements met... Program requirements not met...</p>
+        // </section>
     );
 };
