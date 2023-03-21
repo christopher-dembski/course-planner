@@ -80,7 +80,7 @@ export default function CourseSelector({addCourse, coursesInfo, closeCourseSelec
             <section className="w-75">
                 <h2>{courseSelected.title}</h2>
                 <p>{courseSelected.description}</p>
-                <button className="btn btn-secondary m-1">
+                <button className="btn btn-secondary m-1" onClick={closeCourseSelector}>
                     Cancel
                 </button>
                 <button className="btn btn-primary m-1" type="submit" onClick={() => addCourse(courseCodeSelected)}>
