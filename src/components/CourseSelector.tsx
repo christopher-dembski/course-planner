@@ -75,13 +75,15 @@ export default function CourseSelector({addCourse, coursesInfo, closeCourseSelec
     return (
         <section id='course-selector-popup' className="d-flex overflow-auto rounded p-3">
             <section>
-                <button className="btn btn-secondary exit-button" onClick={closeCourseSelector}>X</button>
                 {years.map(year => getCourseListSection(getCoursesForYear(year)))}
             </section>
             <section className="w-75">
                 <h2>{courseSelected.title}</h2>
                 <p>{courseSelected.description}</p>
-                <button className="btn btn-primary" type="submit" onClick={() => addCourse(courseCodeSelected)}>
+                <button className="btn btn-secondary m-1">
+                    Cancel
+                </button>
+                <button className="btn btn-primary m-1" type="submit" onClick={() => addCourse(courseCodeSelected)}>
                     Add Course
                 </button>
             </section>
