@@ -22,13 +22,47 @@ export default function CourseSelector({addCourse, coursesInfo, closeCourseSelec
         return Object.values(coursesInfo).filter(course => course.year === year);
     }
 
+    const flattenArray = <T, >(nestedArray: Array<Array<T>>): Array<T> => {
+        return nestedArray.reduce((flattened, subArray) => flattened.concat(subArray), []);
+    };
+
+    const getPreRequisites = (courseCode: string): Set<string> => {
+        const preRequisites: Set<string> = new Set();
+        const toCheck = flattenArray(coursesInfo[courseCode].prerequisites);
+        while (toCheck.length) {
+            const nextCourseCode = toCheck.pop() as string;
+            if (nextCourseCode in coursesInfo) {
+                preRequisites.add(nextCourseCode);
+            }
+        }
+        return preRequisites;
+    };
+    const preRequisites = getPreRequisites(courseCodeSelected);
+
+    const getPostRequisites = (courseCode: string) => {
+        return new Set(
+            Object.keys(coursesInfo)
+                  .filter(possiblePostRequisite => getPreRequisites(possiblePostRequisite).has(courseCode))
+        );
+    };
+    const postRequisites = getPostRequisites(courseCodeSelected);
+
+
+    const getCourseSectionColor = (courseCode: string): "forestgreen" | "orange" | "white" | "lightblue" => {
+        if (courseCode === courseCodeSelected) { return "forestgreen"; }
+        else if (preRequisites.has(courseCode)) { return "orange"; }
+        else if (postRequisites.has(courseCode)) { return "lightblue"  }
+        else { return "white"; }
+    }
+
     const getCourseSection = (course: CourseInfo) => {
-        return <button
+        return <section
             id="course-box"
-            className="d-flex align-items-center rounded m-2 p-2"
+            className={"d-flex align-items-center rounded m-2 p-2"}
+            style={{backgroundColor: getCourseSectionColor(course.id)}}
             onClick={() => setCourseCodeSelected(course.id)}>
-            <p>{course.title}</p>
-        </button>
+            <p>{`${course.id}: ${course.title}`}</p>
+        </section>
     };
 
     const courseListSection = (courses: CourseInfo[]) => {
