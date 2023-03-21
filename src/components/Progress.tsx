@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import {CoursesInfo, CoursePlans} from '../types';
+import {CoursesInfo, CoursePlans} from "../types";
 
 interface Props {
     coursePlans: CoursePlans,
