@@ -23,6 +23,10 @@ function App() {
         setIsCourseSelectorDisplayed(true);
     };
 
+    const closeCourseSelector = () => {
+      setIsCourseSelectorDisplayed(false);
+    };
+
     const addCourse = (courseId: string) => {
         setIsCourseSelectorDisplayed(false);
         setCoursePlans((prevCoursePlans) => {
@@ -57,6 +61,7 @@ function App() {
                 <CourseSelector
                     coursesInfo={coursesInfo}
                     addCourse={addCourse}
+                    closeCourseSelector={closeCourseSelector}
                 />
             }
             <Progress coursePlans={coursePlans} coursesInfo={coursesInfo}></Progress>

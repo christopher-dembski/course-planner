@@ -7,10 +7,11 @@ import './CourseSelector.css';
 
 interface Props {
     addCourse: (courseId: string) => void,
-    coursesInfo: CoursesInfo
+    coursesInfo: CoursesInfo,
+    closeCourseSelector: () => void
 }
 
-export default function CourseSelector({addCourse, coursesInfo}: Props) {
+export default function CourseSelector({addCourse, coursesInfo, closeCourseSelector}: Props) {
 
     const [courseCodeSelected, setCourseCodeSelected] = useState("EECS-1001");
     const courseSelected = coursesInfo[courseCodeSelected];
@@ -20,7 +21,7 @@ export default function CourseSelector({addCourse, coursesInfo}: Props) {
     const getCoursesForYear = (year: Number) => {
         return Object.values(coursesInfo).filter(course => course.year === year);
     }
-    
+
     const getCourseSection = (course: CourseInfo) => {
         return <button
             id="course-box"
@@ -41,12 +42,14 @@ export default function CourseSelector({addCourse, coursesInfo}: Props) {
     return (
         <section id='course-selector-popup' className="d-flex overflow-auto rounded p-3">
             <section>
+                <button className="btn btn-secondary exit-button" onClick={closeCourseSelector}>X</button>
                 {years.map(year => courseListSection(getCoursesForYear(year)))}
             </section>
             <section className="w-75">
                 <h2>{courseSelected.title}</h2>
                 <p>{courseSelected.description}</p>
-                <button className="btn btn-primary" type="submit" onClick={() => addCourse('EECS-1015')}>Add Course
+                <button className="btn btn-primary" type="submit" onClick={() => addCourse('EECS-1015')}>
+                    Add Course
                 </button>
             </section>
         </section>
