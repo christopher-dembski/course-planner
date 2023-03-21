@@ -1,5 +1,5 @@
 import React from 'react';
-import {CourseInfo, CoursePlans} from '../types';
+import {CoursePlans} from '../types';
 import coursesInfo from "../coursesInfo";
 
 interface Props {
@@ -15,9 +15,6 @@ export default function CoursePlan({coursePlans, coursePlanNumber, setCoursePlan
 
     const getCourseSection = (courseCode: string) => {
         const course = coursesInfo[courseCode];
-        if (course === undefined) {
-            alert(courseCode);
-        }
         return <section className={"d-flex align-items-center rounded m-2 p-2 course-box"}>
             <p>{`${course.id}: ${course.title}`}</p>
         </section>
