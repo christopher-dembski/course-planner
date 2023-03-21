@@ -57,15 +57,14 @@ export default function CourseSelector({addCourse, coursesInfo, closeCourseSelec
 
     const getCourseSection = (course: CourseInfo) => {
         return <section
-            id="course-box"
-            className={"d-flex align-items-center rounded m-2 p-2"}
+            className={"d-flex align-items-center rounded m-2 p-2 course-box"}
             style={{backgroundColor: getCourseSectionColor(course.id)}}
             onClick={() => setCourseCodeSelected(course.id)}>
             <p>{`${course.id}: ${course.title}`}</p>
         </section>
     };
 
-    const courseListSection = (courses: CourseInfo[]) => {
+    const getCourseListSection = (courses: CourseInfo[]) => {
         return <section className="p-2 mb-5">
             <section className="d-flex flex-wrap justify-content-center">
                 {courses.map(course => getCourseSection(course))}
@@ -77,7 +76,7 @@ export default function CourseSelector({addCourse, coursesInfo, closeCourseSelec
         <section id='course-selector-popup' className="d-flex overflow-auto rounded p-3">
             <section>
                 <button className="btn btn-secondary exit-button" onClick={closeCourseSelector}>X</button>
-                {years.map(year => courseListSection(getCoursesForYear(year)))}
+                {years.map(year => getCourseListSection(getCoursesForYear(year)))}
             </section>
             <section className="w-75">
                 <h2>{courseSelected.title}</h2>

@@ -1,5 +1,6 @@
 import React from 'react';
-import {CoursePlans} from '../types';
+import {CourseInfo, CoursePlans} from '../types';
+import coursesInfo from "../coursesInfo";
 
 interface Props {
     coursePlans: CoursePlans,
@@ -8,14 +9,51 @@ interface Props {
     setCoursePlanNumber: (coursePLanNumber: number) => void
 }
 
-export default function CoursePlan({coursePlans,  coursePlanNumber, setCoursePlanNumber, openCourseSelector}: Props) {
+export default function CoursePlan({coursePlans, coursePlanNumber, setCoursePlanNumber, openCourseSelector}: Props) {
+
+    const currentCoursePlan = coursePlans[coursePlanNumber];
+
+    const getCourseSection = (courseCode: string) => {
+        const course = coursesInfo[courseCode];
+        if (course === undefined) {
+            alert(courseCode);
+        }
+        return <section className={"d-flex align-items-center rounded m-2 p-2 course-box"}>
+            <p>{`${course.id}: ${course.title}`}</p>
+        </section>
+    };
+
+    const getCourseListSection = (coursesForSemester: string[], semesterNumber: number) => {
+        return <section className="d-flex p-2 m-2">
+            <div className="m-3">
+                <h2>Semester {semesterNumber}</h2>
+            </div>
+            <section className="d-flex flex-wrap justify-content-center align-items-center">
+                {coursesForSemester.map(course => getCourseSection(course))}
+                <button
+                    className={"btn btn-primary btn-sm"}
+                    style={{height: "50px"}}
+                    onClick={() => openCourseSelector(coursePlanNumber)}>
+                    Add Course
+                </button>
+            </section>
+        </section>
+    };
+
+    const getIndividualCoursePlanSection = () => {
+        return <section>
+            {currentCoursePlan.map((courses, i) => getCourseListSection(courses, i + 1))}
+        </section>
+    };
+
     return (
         <section className="m-3">
-            <p>Introduction to Programming - EECS 1015</p>
-            <p>Discrete Math - EECS 1019</p>
-            <p>Differential Calculus - MATH 1013</p>
-            {/* 0 is a placeholder for the term number to add a course for */}
-            <button onClick={() => openCourseSelector(0)}>Add Course [+]</button>
+            <section>
+                {/*  tabs to switch between course plans  */}
+            </section>
+            <section>
+                {getIndividualCoursePlanSection()}
+            </section>
         </section>
     );
 }

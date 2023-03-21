@@ -9,7 +9,7 @@
     background-color: lightgray;
 }
 
-#course-box {
+.course-box {
     width: 200px;
     height: 50px;
     border: 1px solid black;
@@ -18,11 +18,11 @@
     background-color: white;
 }
 
-#course-box:hover {
+.course-box:hover {
     background-color: cornflowerblue;
 }
 
-#course-box > p  {
+.course-box > p  {
     font-size: 10px;
     text-align: center;
 }
