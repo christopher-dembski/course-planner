@@ -1,14 +1,14 @@
-import React, {useState} from 'react';
+import React, {useState} from "react";
 
-import Header from './components/Header';
-import CoursePlan from './components/CoursePlan';
-import CourseSelector from './components/CourseSelector';
-import Progress from './components/Progress';
+import Header from "./components/Header";
+import CoursePlan from "./components/CoursePlan";
+import CourseSelector from "./components/CourseSelector";
+import Progress from "./components/Progress";
 
-import './App.css';
+import "./App.css";
 
-import coursesInfo from './coursesInfo';
-import _coursePlans from './coursePlans';  // eventually will be loaded from local-storage and saved between sessions
+import coursesInfo from "./coursesInfo";
+import _coursePlans from "./coursePlans";  // eventually will be loaded from local-storage and saved between sessions
 
 
 function App() {
@@ -36,6 +36,15 @@ function App() {
         });
     };
 
+    const removeCourse = (courseIdToRemove: string) => {
+        setCoursePlans((prevCoursePlans) => {
+            const newCoursePlans = JSON.parse(JSON.stringify(prevCoursePlans));
+            const courseIndex = newCoursePlans[coursePlanNumber].indexOf(courseIdToRemove);
+            newCoursePlans[coursePlanNumber].splice(courseIndex, 1);
+            return newCoursePlans;
+        });
+    };
+
     return (
         <section>
             <link
@@ -55,6 +64,7 @@ function App() {
                 coursePlanNumber={coursePlanNumber}
                 setCoursePlanNumber={setCoursePlanNumber}
                 openCourseSelector={openCourseSelector}
+                removeCourse={removeCourse}
             />
             {
                 isCourseSelectorDisplayed &&

@@ -1,28 +1,32 @@
-import React from 'react';
-import {CoursePlans} from '../types';
+import React from "react";
+import {CoursePlans} from "../types";
 import coursesInfo from "../coursesInfo";
+import "./CoursePlan.css";
 
 interface Props {
     coursePlans: CoursePlans,
     openCourseSelector: (termNumberToAddCourseFor: number) => void,
     coursePlanNumber: number,
-    setCoursePlanNumber: (coursePLanNumber: number) => void
+    setCoursePlanNumber: (coursePLanNumber: number) => void,
+    removeCourse: (courseId: string) => void
 }
 
-export default function CoursePlan({coursePlans, coursePlanNumber, setCoursePlanNumber, openCourseSelector}: Props) {
+export default function CoursePlan(props: Props) {
+
+    const {coursePlans, coursePlanNumber, setCoursePlanNumber, openCourseSelector, removeCourse} = props;
 
     const currentCoursePlan = coursePlans[coursePlanNumber];
 
     const getCourseSection = (courseCode: string) => {
         const course = coursesInfo[courseCode];
-        return <section className={"d-flex align-items-center rounded m-2 p-2 course-box"}>
+        return <section className={"d-flex justify-content-center rounded m-2 p-2 course-info"}>
             <p>{`${course.id}: ${course.title}`}</p>
         </section>
     };
 
     const getCourseListSection = (coursesForSemester: string[], semesterNumber: number) => {
         return <section className="d-flex p-2 m-2">
-            <div className="m-3">
+            <div className="semester-titles">
                 <h2>Semester {semesterNumber}</h2>
             </div>
             <section className="d-flex flex-wrap justify-content-center align-items-center">
@@ -30,7 +34,7 @@ export default function CoursePlan({coursePlans, coursePlanNumber, setCoursePlan
                 <button
                     className={"btn btn-primary btn-sm"}
                     style={{height: "50px"}}
-                    onClick={() => openCourseSelector(coursePlanNumber)}>
+                    onClick={() => openCourseSelector(semesterNumber - 1)}>
                     Add Course
                 </button>
             </section>

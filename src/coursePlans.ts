@@ -1,4 +1,4 @@
-import {CoursePlans} from './types';
+import {CoursePlans} from "./types";
 
 export default [
     [  // course plan 1
