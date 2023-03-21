@@ -82,7 +82,7 @@ export default function CourseSelector({addCourse, coursesInfo, closeCourseSelec
             <section className="w-75">
                 <h2>{courseSelected.title}</h2>
                 <p>{courseSelected.description}</p>
-                <button className="btn btn-primary" type="submit" onClick={() => addCourse('EECS-1015')}>
+                <button className="btn btn-primary" type="submit" onClick={() => addCourse(courseCodeSelected)}>
                     Add Course
                 </button>
             </section>
