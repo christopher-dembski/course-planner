@@ -4,8 +4,6 @@
 
 To get started, clone the repo with `git clone https://github.com/christopher-dembski/course-planner.git`.
 
-WARNING: Do not clone this repo in a folder synced with Windows OneDrive. Some file names in this project contain illegal characters in OneDrive. This will cause syncing issues and the folder may become corrupt. Found this out the hard way ;)
-
 Then, run `npm install` to install dependencies.
 
 To run the app in development mode, run `npm start`.
