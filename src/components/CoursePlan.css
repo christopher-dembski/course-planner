@@ -1,0 +1,18 @@
+.semester-titles {
+    width: 200px;
+    white-space: nowrap;
+}
+
+.course-info {
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+}
+
+.course-info > p  {
+    font-size: 10px;
+    text-align: center;
+}
