@@ -28,11 +28,12 @@ export default function CourseSelector({addCourse, coursesInfo, closeCourseSelec
 
     const getPreRequisites = (courseCode: string): Set<string> => {
         const preRequisites: Set<string> = new Set();
-        const toCheck = flattenArray(coursesInfo[courseCode].prerequisites);
+        let toCheck = flattenArray(coursesInfo[courseCode].prerequisites);
         while (toCheck.length) {
             const nextCourseCode = toCheck.pop() as string;
             if (nextCourseCode in coursesInfo) {
                 preRequisites.add(nextCourseCode);
+                toCheck = toCheck.concat(flattenArray(coursesInfo[nextCourseCode].prerequisites));
             }
         }
         return preRequisites;
