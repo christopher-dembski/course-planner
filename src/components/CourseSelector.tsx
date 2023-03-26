@@ -74,13 +74,13 @@ export default function CourseSelector({addCourse, coursesInfo, closeCourseSelec
     };
 
     return (
-        <section id='course-selector-popup' className="d-flex overflow-auto rounded p-3">
-            <section>
+        <section id='course-selector-popup' className="d-flex rounded p-1">
+            <section style={{width: "70%"}} className="overflow-auto">
                 {years.map(year => getCourseListSection(getCoursesForYear(year)))}
             </section>
-            <section className="w-75">
+            <section style={{width: "30%"}} className="overflow-auto p-3">
                 <h2>{courseSelected.title}</h2>
-                <p>{courseSelected.description}</p>
+                <p className="course-description">{courseSelected.description}</p>
                 <button className="btn btn-secondary m-1" onClick={closeCourseSelector}>
                     Cancel
                 </button>

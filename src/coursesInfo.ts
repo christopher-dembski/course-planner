@@ -128,4 +128,193 @@ export default {
         "prerequisites": [],
         "course-credit-exclusions": []
     },
+    "EECS-3000": {
+        "id": "EECS-3000",
+        "title": "Professional Practice in Computing",
+        "year": 3,
+        "description": "Professional, legal and ethical issues in the development, deployment and use of computer systems; their impact on society including privacy and security, computer crime, malware, and intellectual property; professional ethics and responsibilities; guest lecturers from industry, government and university. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 2030 3.00 or LE/EECS 1030 3.00. Course credit exclusions: LE/ENG 4000 6.00, SC/ENG 4000 6.00 (prior to Summer 2013).",
+        "credits": 3,
+        "prerequisites": [["EECS-2030", "EECS-1030"]],
+        "course-credit-exclusions": []
+    },
+    "EECS-3101": {
+        "id": "EECS-3101",
+        "title": "Design and Analysis of Algorithms",
+        "year": 3,
+        "description": "Review of fundamental data structures. Analysis of algorithms: time and space complexity. Algorithm design paradigms: divide-and-conquer, exploring graphs, greedy methods, local search, dynamic programming, probabilistic algorithms, computational geometry. NP-complete problems. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 2011 3.00; SC/MATH 1090 3.00; SC/MATH 1310 3.00. Course credit exclusion: LE/SC CSE 3101 3.00.",
+        "credits": 3,
+        "prerequisites": [["EECS-2011"], ["MATH-1090"], ["MATH-1310"]],
+        "course-credit-exclusions": ["EECS-3101"]
+    },
+    "EECS-3201": {
+        "id": "EECS-3201",
+        "title": "Digital Logic Design",
+        "year": 3,
+        "description": "Theory, analysis, and design of logic circuits used in digital systems. Students will be introduced to design of switching circuits to implement logic gates, digital number representation and arithmetic circuits. They will learn how to use logic gates to construct combinational and sequential logic circuits and functional blocks. The course and the laboratory introduces the students to hardware description language and modern cad tools. Prerequisites: Cumulative GPA of 4.50 or better over all major EECS courses.(without second digit of '5 ) LE/EECS 1021 3.00 or LE/EECS 1022 3.00; SC/PHYS 1012 or SC/PHYS 1412 or SC/PHYS 1422 or SC/PHYS 1801 3.0 or SC/PHYS 1010.",
+        "credits": 4,
+        "prerequisites": [["EECS-1021", "EECS-1022"], ["PHYS-1012", "PHYS-1412", "PHYS-1422", "PHYS-1801", "PHYS-1010"]],
+        "course-credit-exclusions": []
+    },
+    "EECS-3121": {
+        "id": "EECS-3121",
+        "title": "Numerical Methods I",
+        "year": 3,
+        "description": "An introductory course in computational linear algebra. Topics include simple error analysis, linear systems of equations, non-linear equations, linear least squares and interpolation. Prerequisites: One of SC/MATH 1010 3.00, SC/MATH 1014 3.00, SC/MATH 1310 3.00; one of SC/MATH 1021 3.00, SC/MATH 1025 3.00, SC/MATH 2221 3.00; one of LE/EECS 1540 3.00, LE/EECS 2031 3.00, or LE/EECS 2501 1.00. Course credit exclusions: LE/EECS 3121 3.00, LE/CSE 3121 3.00 (prior to Fall 2014), SC/CSE 3121 3.00 (prior to Summer 2013).",
+        "credits": 3,
+        "prerequisites": [["MATH-1010", "MATH-1014", "MATH-1310"], ["MATH-1021", "MATH-1025", "MATH-2221"], ["EECS-1540", "EECS-2031", "EECS-2501"]],
+        "course-credit-exclusions": ["MATH-3121"]
+    },
+    "EECS-3122": {
+        "id": "EECS-3122",
+        "title": "Numerical Methods II",
+        "year": 3,
+        "description": "Algorithms and computer methods for solving problems of differentiation, integration, systems of non-linear equations and matrix eigenvalues. Prerequisite: SC/MATH 3241 3.00 or LE/EECS 3121 3.00. Course credit exclusions: LE/EECS 3122 3.00, LE/CSE 3122 3.00 (prior to Fall 2014), SC/CSE 3.00 (prior to Summer 2013).",
+        "credits": 3,
+        "prerequisites": [["MATH-3241", "MATH-3121"]],
+        "course-credit-exclusions": []
+    },
+    "EECS-3213": {
+        "id": "EECS-3213",
+        "title": "Communication Networks",
+        "year": 3,
+        "description": "Introduces the basics of communications and networking. Topics include transmission media; fundamental limits; protocols and hierarchies; the OSI model; encoding of data as signals; error and flow control; medium access; routing; internetworking; transport services; high-level applications. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; SC/MATH 1310 3.00. Previously offered as: LE/CSE 3213 3.00. PRIOR TO SUMMER 2013: SC/CSE 3213 3.00.",
+        "credits": 3,
+        "prerequisites": [["EECS-2030", "EECS-1030"], ["MATH-1310"]],
+        "course-credit-exclusions": []
+    },
+    "EECS-3214": {
+        "id": "EECS-3214",
+        "title": "Computer Network Protocols and Applications",
+        "year": 3,
+        "description": "This course focuses on the higher-level network protocols, security issues, network programming, and applications. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; NCR: This course is not open for credit to students who passed LE/EECS 4213 3.00, LE/CSE 4213 3.00, SC/CSE 4213 3.00, LE/CSE 4213 3.00, SC/CSE 4213 3.00.",
+        "credits": 3,
+        "prerequisites": [["EECS-2030", "EECS-1030"]],
+        "course-credit-exclusions": ["EECS-4213"]
+    },
+    "EECS-3215": {
+        "id": "EECS-3215",
+        "title": "Embedded Systems",
+        "year": 3,
+        "description": "Introduction to the design of embedded systems using both hardware and software. Topics include microcontrollers; their architecture, and programming; design and implementation of embedded systems using field programmable gate arrays. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 2031 3.00, LE/EECS 3201 4.00. Course Credit Exclusion: LE/CSE 3215 4.00.",
+        "credits": 3,
+        "prerequisites": [["EECS-2031"], ["EECS-3201"]],
+        "course-credit-exclusions": []
+    },
+    "EECS-3216": {
+        "id": "EECS-3216",
+        "title": " Digital Systems Engineering",
+        "year": 3,
+        "description": "This is a project intensive course to introduce students to modeling, implementation, testing, and validation of hardware-based embedded systems. The emphasis in this course is on complex digital systems that interact with physical systems. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"), LE/EECS 2032 4.00, or LE/EECS 2031 3.00, and LE/EECS 3201 3.00.",
+        "credits": 3,
+        "prerequisites": [["EECS-2032", "EECS-2031"], ["EECS-3201"]],
+        "course-credit-exclusions": []
+    },
+    "EECS-3221": {
+        "id": "EECS-3221",
+        "title": "Operating Systems Fundamentals",
+        "year": 3,
+        "description": "Principles of operating systems. Concurrent processes, CPU scheduling, deadlocks, memory management, file systems, protection and security, and case studies. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 2021 4.00 and LE/EECS 2031 3.00 or LE/EECS 2032 4.00. Course Credit Exclusion: LE/CSE 3221 3.00.",
+        "credits": 3,
+        "prerequisites": [["EECS-2030", "EECS-1030"], ["EECS-2021", "EECS-2031"], ["EECS-2032"]],
+        "course-credit-exclusions": []
+    },
+    "EECS-3311": {
+        "id": "EECS-3311",
+        "title": "Software Design",
+        "year": 3,
+        "description": "A study of design methods and their use in the correct implementation, maintenance and evolution of software systems. Topics include design, implementation, testing, documentation needs and standards, support tools. Students design and implement components of a software system. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 2011 3.00; SC/MATH 1090 3.00; LE/EECS 2031 3.00 or LE/EECS 2032 4.00. Course Credit Exclusions: LE/CSE 3311 3.00.",
+        "credits": 3,
+        "prerequisites": [["EECS-2030", "EECS-1030"], ["EECS-2011"], ["MATH-1090"], ["EECS-2031", "EECS-2032"]],
+        "course-credit-exclusions": []
+    },
+    "EECS-3342": {
+        "id": "EECS-3342",
+        "title": "System Specification and Refinement",
+        "year": 3,
+        "description": "Theory and tools for specifying computer systems (sequential, concurrent and embedded). Specification (via set theory and predicate logic), modelling, abstraction, refinement and formal reasoning are undertaken before code development so that systems are correct by construction under the stated assumptions. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 2011 3.00; SC/MATH 1090 3.00.",
+        "credits": 3,
+        "prerequisites": [["EECS-2030", "EECS-1030"], ["EECS-2011"], ["MATH-1090"]],
+        "course-credit-exclusions": []
+    },
+    "EECS-3401": {
+        "id": "EECS-3401",
+        "title": "Introduction to Artificial Intelligence and Logic Programming",
+        "year": 3,
+        "description": "Artificial Intelligence (AI) deals with how to build intelligent systems. In this course, we examine fundamental concepts in AI: knowledge representation and reasoning, search, constraint satisfaction, reasoning under uncertainty, etc. The course also introduces logic programming and Prolog. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 2011 3.00; MATH 1090 3.00. Previously offered as: LE/CSE 3401 3.00. PRIOR TO FALL 2014: course credit exclusion: LE/CSE 3402 3.00. PRIOR TO SUMMER 2013: course credit exclusions: SC/CSE 3401 3.00, SC/CSE 3402 3.00.",
+        "credits": 3,
+        "prerequisites": [["EECS-2030", "EECS-1030"], ["EECS-2011"], ["MATH-1090"]],
+        "course-credit-exclusions": []
+    },
+    "EECS-3451": {
+        "id": "EECS-3451",
+        "title": "Signals and Systems",
+        "year": 3,
+        "description": "An introduction to the mathematical background in signals and systems; signal and image processing: sampling, discrete Fourier transform, filtering; linear system theory; Kalman filtering; feedback. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 2021 4.00, SC/MATH 1310 3.00. Course credit exclusions: SC/MATH 4130B 3.00, SC/PHYS 4060 3.00. Previously offered as: LE/CSE 3451 4.00. PRIOR TO FALL 2014: course credit exclusions: SC/MATH 4830 3.00. PRIOR TO SUMMER 2013: course credit exclusions: SC/CSE 3451 4.00, SC/EATS 4020 3.00.",
+        "credits": 3,
+        "prerequisites": [["EECS-2021"], ["MATH-1310"]],
+        "course-credit-exclusions": ["MATH-4130B", "PHYS-4060"]
+    },
+    "EECS-3421": {
+        "id": "EECS-3421",
+        "title": "Introduction to Database Systems",
+        "year": 3,
+        "description": "Concepts, approaches and techniques in database management systems (DBMS). Logical model of relational databases. An introduction to relational database design. Other topics such as query languages, crash recovery and concurrency control. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; Course credit exclusions: AP/ITEC 3220 3.00. Previously offered as: LE/CSE 3421 3.00. PRIOR TO SUMMER 2013: SC/CSE 3421 3.00.",
+        "credits": 3,
+        "prerequisites": [["EECS-2030", "EECS-1030"], ["EECS-2011"], ["MATH-1090"]],
+        "course-credit-exclusions": ["ITEC-3220"]
+    },
+    "EECS-3431": {
+        "id": "EECS-3431",
+        "title": "Introduction to 3D Computer Graphics",
+        "year": 3,
+        "description": "Introduces the fundamental concepts and algorithms of three-dimensional computer graphics, including object modelling, transformations, cameras, visibility and shading. Prerequisites: Cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 2030 3.00; SC/MATH 1025 3.00. Course credit exclusions: AK/AS/SC/CSE 4431 3.00.",
+        "credits": 3,
+        "prerequisites": [["EECS-2030"], ["MATH-1025"]],
+        "course-credit-exclusions": []
+    },
+    "EECS-3461": {
+        "id": "EECS-3461",
+        "title": "User Interfaces",
+        "year": 3,
+        "description": "Introduces user interfaces and the tools and mechanisms to create and prototype them. Students work in small groups and learn how to design user interfaces, how to realize them and how to evaluate the end result. Prerequisite: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 2030 3.00 or LE/EECS 1030 3.00. Course credit exclusions: AP/ITEC 3230 3.00. Previously offered as: LE/CSE 3461 3.00. PRIOR TO SUMMER 2013: SC/CSE 3461 3.00.",
+        "credits": 3,
+        "prerequisites": [["EECS-2030", "EECS-1030"]],
+        "course-credit-exclusions": ["ITEC-3230"]
+    },
+    "EECS-3481": {
+        "id": "EECS-3481",
+        "title": "Applied Cryptography",
+        "year": 3,
+        "description": "An overview of cryptographic algorithms and the main cryptosystems in use today, emphasizing the application of cryptographic algorithms to designing secure protocols. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 2011 3.00.",
+        "credits": 3,
+        "prerequisites": [["EECS-2011"]],
+        "course-credit-exclusions": []
+    },
+    "EECS-3482": {
+        "id": "EECS-3482",
+        "title": "Introduction to Computer Security",
+        "year": 3,
+        "description": "Introduces fundamental computer security concepts. Topics include security goals and terminology, an overview of the various security domains, an introduction to cryptography, security policies, risk management and auditing. Laboratory exercises emphasize these topics in a practical manner. Prerequisites: Any 12 university credits at the 2000-level in any discipline.",
+        "credits": 3,
+        "prerequisites": [],
+        "course-credit-exclusions": []
+    },
+    "EECS-3910": {
+        "id": "EECS-3910",
+        "title": "Industry Practicum",
+        "year": 3,
+        "description": "This course is only available to students in the Industry Partnership Stream of the Computer Science Honours BSc (enrollment by permission). Students in the stream may enroll in the course during a term for which they are employed by the industrial partner. The learning outcomes of the course will be approved by the instructor prior to enrollment. Prerequisites: EECS credits in the 2000 level.",
+        "credits": 3,
+        "prerequisites": [],
+        "course-credit-exclusions": []
+    },
+    "EECS-3911": {
+        "id": "EECS-3911",
+        "title": "Industry Practicum",
+        "year": 3,
+        "description": "This course is only available to students in the Industry Partnership Stream of the Computer Science Honours BSc (enrollment by permission). Students in the stream may enroll in the course during a term for which they are employed by the industrial partner. The learning outcomes of the course will be approved by the instructor prior to enrollment. Prerequisites: EECS credits in the 2000 level.",
+        "credits": 3,
+        "prerequisites": [],
+        "course-credit-exclusions": []
+    },
 } as CoursesInfo;
