@@ -170,7 +170,7 @@ export default {
         "year": 3,
         "description": "Algorithms and computer methods for solving problems of differentiation, integration, systems of non-linear equations and matrix eigenvalues. Prerequisite: SC/MATH 3241 3.00 or LE/EECS 3121 3.00. Course credit exclusions: LE/EECS 3122 3.00, LE/CSE 3122 3.00 (prior to Fall 2014), SC/CSE 3.00 (prior to Summer 2013).",
         "credits": 3,
-        "prerequisites": [["MATH-3241", "MATH-3121"]],
+        "prerequisites": [["MATH-3241", "EECS-3121"]],
         "course-credit-exclusions": []
     },
     "EECS-3213": {
