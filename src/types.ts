@@ -6,6 +6,7 @@ type CourseInfo = {
     'credits': number,
     'prerequisites': Array<Array<string>>,
     'course-credit-exclusions': Array<string>
+    'co-requisites'?: Array<Array<string>>,
     'crossListedAs'?: string
 };
 
