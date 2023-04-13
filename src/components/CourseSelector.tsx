@@ -49,11 +49,11 @@ export default function CourseSelector({addCourse, coursesInfo, closeCourseSelec
     const postRequisites = getPostRequisites(courseCodeSelected);
 
 
-    const getCourseSectionColor = (courseCode: string): "forestgreen" | "orange" | "white" | "lightblue" => {
+    const getCourseSectionColor = (courseCode: string): "forestgreen" | "orange" | "wheat" | "lightblue" => {
         if (courseCode === courseCodeSelected) { return "forestgreen"; }
         else if (preRequisites.has(courseCode)) { return "orange"; }
         else if (postRequisites.has(courseCode)) { return "lightblue"  }
-        else { return "white"; }
+        else { return "wheat"; }
     }
 
     const getCourseSection = (course: CourseInfo) => {
@@ -74,13 +74,13 @@ export default function CourseSelector({addCourse, coursesInfo, closeCourseSelec
     };
 
     return (
-        <section id='course-selector-popup' className="d-flex overflow-auto rounded p-3">
-            <section>
+        <section id='course-selector-popup' className="d-flex rounded p-1">
+            <section style={{width: "70%"}} className="overflow-auto">
                 {years.map(year => getCourseListSection(getCoursesForYear(year)))}
             </section>
-            <section className="w-75">
+            <section style={{width: "30%"}} className="overflow-auto p-3">
                 <h2>{courseSelected.title}</h2>
-                <p>{courseSelected.description}</p>
+                <p className="course-description">{courseSelected.description}</p>
                 <button className="btn btn-secondary m-1" onClick={closeCourseSelector}>
                     Cancel
                 </button>
