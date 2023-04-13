@@ -49,11 +49,11 @@ export default function CourseSelector({addCourse, coursesInfo, closeCourseSelec
     const postRequisites = getPostRequisites(courseCodeSelected);
 
 
-    const getCourseSectionColor = (courseCode: string): "forestgreen" | "orange" | "white" | "lightblue" => {
+    const getCourseSectionColor = (courseCode: string): "forestgreen" | "orange" | "wheat" | "lightblue" => {
         if (courseCode === courseCodeSelected) { return "forestgreen"; }
         else if (preRequisites.has(courseCode)) { return "orange"; }
         else if (postRequisites.has(courseCode)) { return "lightblue"  }
-        else { return "white"; }
+        else { return "wheat"; }
     }
 
     const getCourseSection = (course: CourseInfo) => {
