@@ -7,16 +7,23 @@ import Progress from "./components/Progress";
 
 import "./App.css";
 
-import coursesInfo from "./coursesInfo";
-import _coursePlans from "./coursePlans";  // eventually will be loaded from local-storage and saved between sessions
+import {CoursePlans} from "./types";
 
+import coursesInfo from "./coursesInfo";
+import defaultCoursePlans from "./coursePlans";  // eventually will be loaded from local-storage and saved between sessions
+
+const loadCoursePlans = () => {
+    const savedCoursePlans = localStorage.getItem("course-plans");
+    return savedCoursePlans
+        ? JSON.parse(savedCoursePlans) as CoursePlans
+        : defaultCoursePlans;
+}
 
 function App() {
     let [isCourseSelectorDisplayed, setIsCourseSelectorDisplayed] = useState(false);
-    let [coursePlans, setCoursePlans] = useState(_coursePlans);
+    let [coursePlans, setCoursePlans] = useState(loadCoursePlans());
     let [coursePlanNumber, setCoursePlanNumber] = useState(0);  // index of current course plan to display
     let [termNumber, setTermNumber] = useState(0);  // index for term to add course to
-
 
     const openCourseSelector = (termNumberToAddCourseFor: number) => {
         setTermNumber(termNumberToAddCourseFor);
@@ -32,6 +39,7 @@ function App() {
         setCoursePlans((prevCoursePlans) => {
             const newCoursePlans = JSON.parse(JSON.stringify(prevCoursePlans));
             newCoursePlans[coursePlanNumber][termNumber].push(courseId);
+            localStorage.setItem("course-plans", JSON.stringify(newCoursePlans));
             return newCoursePlans;
         });
     };
@@ -41,6 +49,7 @@ function App() {
             const newCoursePlans = JSON.parse(JSON.stringify(prevCoursePlans));
             const courseIndex = newCoursePlans[coursePlanNumber][semesterNumber].indexOf(courseIdToRemove);
             newCoursePlans[coursePlanNumber][semesterNumber].splice(courseIndex, 1);
+            localStorage.setItem("course-plans", JSON.stringify(newCoursePlans));
             return newCoursePlans;
         });
     };
