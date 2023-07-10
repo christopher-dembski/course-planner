@@ -5,7 +5,7 @@
 
 .course-info {
     width: 200px;
-    height: 50px;
+    height: 60px;
     border: 1px solid black;
     justify-content: center;
     align-items: center;
@@ -15,8 +15,4 @@
 .course-info > p  {
     font-size: 10px;
     text-align: center;
-}
-
-.remove-course-button {
-    height: 100%;
 }
