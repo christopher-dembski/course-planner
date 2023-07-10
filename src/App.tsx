@@ -36,11 +36,11 @@ function App() {
         });
     };
 
-    const removeCourse = (courseIdToRemove: string) => {
+    const removeCourse = (courseIdToRemove: string, semesterNumber: number) => {
         setCoursePlans((prevCoursePlans) => {
             const newCoursePlans = JSON.parse(JSON.stringify(prevCoursePlans));
-            const courseIndex = newCoursePlans[coursePlanNumber].indexOf(courseIdToRemove);
-            newCoursePlans[coursePlanNumber].splice(courseIndex, 1);
+            const courseIndex = newCoursePlans[coursePlanNumber][semesterNumber].indexOf(courseIdToRemove);
+            newCoursePlans[coursePlanNumber][semesterNumber].splice(courseIndex, 1);
             return newCoursePlans;
         });
     };
