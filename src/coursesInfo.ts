@@ -260,7 +260,7 @@ export default {
         year: 3,
         description: "Concepts, approaches and techniques in database management systems (DBMS). Logical model of relational databases. An introduction to relational database design. Other topics such as query languages, crash recovery and concurrency control. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; Course credit exclusions: AP/ITEC 3220 3.00. Previously offered as: LE/CSE 3421 3.00. PRIOR TO SUMMER 2013: SC/CSE 3421 3.00.",
         credits: 3,
-        prerequisites: [["EECS-2030", "EECS-1030"], ["EECS-2011"], ["MATH-1090"]],
+        prerequisites: [["EECS-2030", "EECS-1030"]],
        courseCreditExclusions: ["ITEC-3220"]
     },
     "EECS-3431": {
