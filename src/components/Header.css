@@ -1,0 +1,20 @@
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(59, 70, 78);
+}
+
+header > h1 {
+    color: white;
+}
+
+header h2 {
+    color: white;
+    margin-right: 10px;
+}
+
+.course-number-selector-button {
+    height: 75%;
+}

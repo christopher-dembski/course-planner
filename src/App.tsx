@@ -10,7 +10,7 @@ import "./App.css";
 import {CoursePlans} from "./types";
 
 import coursesInfo from "./coursesInfo";
-import defaultCoursePlans from "./coursePlans";  // eventually will be loaded from local-storage and saved between sessions
+import defaultCoursePlans from "./coursePlans";
 
 const loadCoursePlans = () => {
     const savedCoursePlans = localStorage.getItem("course-plans");
@@ -67,7 +67,11 @@ function App() {
                 integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
                 crossOrigin="anonymous">
             </script>
-            <Header/>
+            <Header
+                coursePlanNumber={coursePlanNumber}
+                setCoursePlanNumber={setCoursePlanNumber}
+                coursePlans={coursePlans}
+            />
             <CoursePlan
                 coursePlans={coursePlans}
                 coursePlanNumber={coursePlanNumber}
