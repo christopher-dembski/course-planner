@@ -52,14 +52,7 @@ export default function CoursePlan(props: Props) {
         </section>
     };
 
-    return (
-        <section className="m-3">
-            <section>
-                {/*  tabs to switch between course plans  */}
-            </section>
-            <section>
-                {getIndividualCoursePlanSection()}
-            </section>
-        </section>
-    );
+    return <section className="m-3">
+        {getIndividualCoursePlanSection()}
+    </section>
 }
