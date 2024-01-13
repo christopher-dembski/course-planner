@@ -23,7 +23,7 @@ export default function Header({coursePlanNumber, setCoursePlanNumber}: Props) {
     } ;
     
     return (
-        <header className="header p-2">
+        <header className="header position-sticky top-0 p-2">
             <h1>York University | Computer Science Course Planner</h1>
             <section className={"d-flex m-3"}>
                 <button
