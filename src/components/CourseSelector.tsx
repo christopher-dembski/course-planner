@@ -4,6 +4,8 @@ import {CoursesInfo, CourseInfo} from '../types';
 
 import './CourseSelector.css';
 
+type CourseSectionClass = "course-box-selected" | "course-box-unselected" |
+                          "course-box-prerequisite" | "course-box-postrequisite";
 
 interface Props {
     addCourse: (courseId: string) => void,
@@ -48,18 +50,16 @@ export default function CourseSelector({addCourse, coursesInfo, closeCourseSelec
     };
     const postRequisites = getPostRequisites(courseCodeSelected);
 
-
-    const getCourseSectionColor = (courseCode: string): "forestgreen" | "orange" | "wheat" | "lightblue" => {
-        if (courseCode === courseCodeSelected) { return "forestgreen"; }
-        else if (preRequisites.has(courseCode)) { return "orange"; }
-        else if (postRequisites.has(courseCode)) { return "lightblue"  }
-        else { return "wheat"; }
+    const getCourseSectionClass = (courseCode: string): CourseSectionClass => {
+        if (courseCode === courseCodeSelected) { return "course-box-selected"; }
+        else if (preRequisites.has(courseCode)) { return "course-box-prerequisite"; }
+        else if (postRequisites.has(courseCode)) { return "course-box-postrequisite"  }
+        else { return "course-box-unselected"; }
     }
 
     const getCourseSection = (course: CourseInfo) => {
         return <section
-            className={"d-flex align-items-center rounded m-2 p-2 course-box"}
-            style={{backgroundColor: getCourseSectionColor(course.id)}}
+            className={`${getCourseSectionClass(course.id)} d-flex align-items-center rounded m-2 p-2 course-box`}
             onClick={() => setCourseCodeSelected(course.id)}>
             <p>{`${course.id}: ${course.title}`}</p>
         </section>
@@ -75,10 +75,10 @@ export default function CourseSelector({addCourse, coursesInfo, closeCourseSelec
 
     return (
         <section id='course-selector-popup' className="d-flex rounded p-1">
-            <section style={{width: "70%"}} className="overflow-auto">
+            <section className="available-courses-section overflow-auto">
                 {years.map(year => getCourseListSection(getCoursesForYear(year)))}
             </section>
-            <section style={{width: "30%"}} className="overflow-auto p-3">
+            <section className="course-info-section overflow-auto p-3">
                 <h2>{courseSelected.title}</h2>
                 <p className="course-description">{courseSelected.description}</p>
                 <button className="btn btn-secondary m-1" onClick={closeCourseSelector}>

@@ -19,7 +19,7 @@
 }
 
 .course-box:hover {
-    background-color: cornflowerblue;
+    background-color: lightyellow;
 }
 
 .course-box > p  {
@@ -38,4 +38,30 @@
     left: 5px;
     height: 35px;
     width: 35px;
+}
+
+.course-info-section {
+    width: 30%;
+}
+
+.available-courses-section {
+    width: 70%;
+}
+
+/* course box colours */
+
+.course-box-selected {
+    background-color: rgb(193, 225, 193);
+}
+
+.course-box-prerequisite {
+    background-color: rgb(250, 200, 152);
+}
+
+.course-box-postrequisite {
+    background-color: rgb(167, 199, 231);
+}
+
+.course-box-unselected {
+    background-color: wheat;
 }

@@ -38,8 +38,7 @@ export default function CoursePlan(props: Props) {
             <section className="d-flex flex-wrap justify-content-center align-items-center">
                 {coursesForSemester.map(course => getCourseSection(course, semesterNumber))}
                 <button
-                    className={"btn btn-primary btn-sm"}
-                    style={{height: "50px"}}
+                    className={"btn btn-primary btn-sm open-course-selector-button"}
                     onClick={() => openCourseSelector(semesterNumber)}>
                     Add Course
                 </button>
