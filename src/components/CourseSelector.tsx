@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {flattenArray} from "../utilities/arrayUtilties";
 
 import {CoursesInfo, CourseInfo} from '../types';
 
@@ -23,10 +24,6 @@ export default function CourseSelector({addCourse, coursesInfo, closeCourseSelec
     const getCoursesForYear = (year: Number) => {
         return Object.values(coursesInfo).filter(course => course.year === year);
     }
-
-    const flattenArray = <T, >(nestedArray: Array<Array<T>>): Array<T> => {
-        return nestedArray.reduce((flattened, subArray) => flattened.concat(subArray), []);
-    };
 
     const getPreRequisites = (courseCode: string): Set<string> => {
         const preRequisites: Set<string> = new Set();
