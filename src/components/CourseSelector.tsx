@@ -79,13 +79,13 @@ export default function CourseSelector({addCourse, coursesInfo, closeCourseSelec
     const getCourseInfoSection = () => {
         return <section className="course-info-section overflow-auto p-3">
             <h2>{courseSelected.title}</h2>
-            <p className="course-description">{courseSelected.description}</p>
             <button className="btn btn-secondary m-1" onClick={closeCourseSelector}>
                 Cancel
             </button>
             <button className="btn btn-primary m-1" type="submit" onClick={() => addCourse(courseCodeSelected)}>
                 Add Course
             </button>
+            <p className="course-description mt-3">{courseSelected.description}</p>
         </section>
     };
 
