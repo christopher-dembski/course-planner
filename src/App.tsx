@@ -67,18 +67,20 @@ function App() {
                 integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
                 crossOrigin="anonymous">
             </script>
-            <Header
-                coursePlanNumber={coursePlanNumber}
-                setCoursePlanNumber={setCoursePlanNumber}
-                coursePlans={coursePlans}
-            />
-            <CoursePlan
-                coursePlans={coursePlans}
-                coursePlanNumber={coursePlanNumber}
-                setCoursePlanNumber={setCoursePlanNumber}
-                openCourseSelector={openCourseSelector}
-                removeCourse={removeCourse}
-            />
+            <div id="main">
+                <Header
+                    coursePlanNumber={coursePlanNumber}
+                    setCoursePlanNumber={setCoursePlanNumber}
+                    coursePlans={coursePlans}
+                />
+                <CoursePlan
+                    coursePlans={coursePlans}
+                    coursePlanNumber={coursePlanNumber}
+                    setCoursePlanNumber={setCoursePlanNumber}
+                    openCourseSelector={openCourseSelector}
+                    removeCourse={removeCourse}
+                />
+            </div>
             {
                 isCourseSelectorDisplayed &&
                 <CourseSelector

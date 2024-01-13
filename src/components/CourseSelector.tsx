@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {flattenArray} from "../utilities/arrayUtilties";
 
 import {CoursesInfo, CourseInfo} from '../types';
@@ -18,6 +18,15 @@ export default function CourseSelector({addCourse, coursesInfo, closeCourseSelec
 
     const [courseCodeSelected, setCourseCodeSelected] = useState("EECS-1001");
     const courseSelected = coursesInfo[courseCodeSelected];
+
+    useEffect(() => {
+        document.body.style.overflowY = 'hidden';
+        (document.getElementById("main") as HTMLElement).style.filter = "blur(5px)";
+        return () => {
+            document.body.style.overflowY = 'auto';
+            (document.getElementById("main") as HTMLElement).style.filter = "unset";
+        }
+    });
 
     const years = [1, 2, 3, 4];
 
