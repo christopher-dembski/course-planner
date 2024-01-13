@@ -1,4 +1,4 @@
-import {CoursesInfo} from "./types";
+import {CoursesInfo} from "../types";
 
 export default {
     "EECS-1001": {

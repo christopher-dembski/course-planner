@@ -9,8 +9,8 @@ import "./App.css";
 
 import {CoursePlans} from "./types";
 
-import coursesInfo from "./coursesInfo";
-import defaultCoursePlans from "./coursePlans";
+import coursesInfo from "./data/coursesInfo";
+import defaultCoursePlans from "./data/coursePlans";
 
 const loadCoursePlans = () => {
     const savedCoursePlans = localStorage.getItem("course-plans");

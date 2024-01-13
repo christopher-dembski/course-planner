@@ -1,6 +1,6 @@
 import React from "react";
 import {CoursePlans} from "../types";
-import coursesInfo from "../coursesInfo";
+import coursesInfo from "../data/coursesInfo";
 import "./CoursePlan.css";
 
 interface Props {

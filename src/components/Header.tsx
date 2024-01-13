@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Header.css";
 import {CoursePlans} from "../types";
-import coursePlans from "../coursePlans";
+import coursePlans from "../data/coursePlans";
 
 interface Props {
     coursePlanNumber: number,
