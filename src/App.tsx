@@ -10,7 +10,7 @@ import "./App.css";
 import {CoursePlans} from "./types";
 
 import coursesInfo from "./data/coursesInfo";
-import defaultCoursePlans from "./data/coursePlans";
+import defaultCoursePlans from "./data/defaultCoursePlans";
 
 const loadCoursePlans = () => {
     const savedCoursePlans = localStorage.getItem("course-plans");
