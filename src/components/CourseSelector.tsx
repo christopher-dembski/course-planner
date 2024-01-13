@@ -30,7 +30,7 @@ export default function CourseSelector({addCourse, coursesInfo, closeCourseSelec
 
     const years = [1, 2, 3, 4];
 
-    const getCoursesForYear = (year: Number) => {
+    const getCoursesForYear = (year: number) => {
         return Object.values(coursesInfo).filter(course => course.year === year);
     }
 

@@ -19,10 +19,10 @@ const loadCoursePlans = () => {
 }
 
 function App() {
-    let [isCourseSelectorDisplayed, setIsCourseSelectorDisplayed] = useState(false);
-    let [coursePlans, setCoursePlans] = useState(loadCoursePlans());
-    let [coursePlanNumber, setCoursePlanNumber] = useState(0);  // index of current course plan to display
-    let [termNumber, setTermNumber] = useState(0);  // index for term to add course to
+    const [isCourseSelectorDisplayed, setIsCourseSelectorDisplayed] = useState(false);
+    const [coursePlans, setCoursePlans] = useState(loadCoursePlans());
+    const [coursePlanNumber, setCoursePlanNumber] = useState(0);  // index of current course plan to display
+    const [termNumber, setTermNumber] = useState(0);  // index for term to add course to
 
     const openCourseSelector = (termNumberToAddCourseFor: number) => {
         setTermNumber(termNumberToAddCourseFor);
@@ -64,7 +64,6 @@ function App() {
                 <CoursePlan
                     coursePlans={coursePlans}
                     coursePlanNumber={coursePlanNumber}
-                    setCoursePlanNumber={setCoursePlanNumber}
                     openCourseSelector={openCourseSelector}
                     removeCourse={removeCourse}
                 />

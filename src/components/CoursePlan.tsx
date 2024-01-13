@@ -7,13 +7,12 @@ interface Props {
     coursePlans: CoursePlans,
     openCourseSelector: (termNumberToAddCourseFor: number) => void,
     coursePlanNumber: number,
-    setCoursePlanNumber: (coursePLanNumber: number) => void,
     removeCourse: (courseId: string, semesterNumber: number) => void
 }
 
 export default function CoursePlan(props: Props) {
 
-    const {coursePlans, coursePlanNumber, setCoursePlanNumber, openCourseSelector, removeCourse} = props;
+    const {coursePlans, coursePlanNumber, openCourseSelector, removeCourse} = props;
 
     const currentCoursePlan = coursePlans[coursePlanNumber];
 
