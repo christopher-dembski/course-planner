@@ -3,7 +3,6 @@ import React, {useState} from "react";
 import Header from "./components/Header";
 import CoursePlan from "./components/CoursePlan";
 import CourseSelector from "./components/CourseSelector";
-import Progress from "./components/Progress";
 
 import "./App.css";
 
@@ -89,7 +88,6 @@ function App() {
                     closeCourseSelector={closeCourseSelector}
                 />
             }
-            <Progress coursePlans={coursePlans} coursesInfo={coursesInfo}></Progress>
         </section>
     );
 }
