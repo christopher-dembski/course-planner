@@ -1,58 +1,58 @@
 #course-selector-popup {
-    position: fixed;
-    top: 5vh;
-    left: 5vw;
-    height: 90vh;
-    width: 90vw;
-    border: 1px solid black;
-    text-align: center;
-    background-color: rgb(229, 228, 226);
+  position: fixed;
+  top: 5vh;
+  left: 5vw;
+  height: 90vh;
+  width: 90vw;
+  border: 1px solid black;
+  text-align: center;
+  background-color: rgb(229, 228, 226);
 }
 
 .course-box {
-    width: 200px;
-    height: 50px;
-    border: 1px solid black;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
+  width: 200px;
+  height: 50px;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
 }
 
 .course-box:hover {
-    background-color: lightyellow;
+  background-color: lightyellow;
 }
 
-.course-box > p  {
-    font-size: 10px;
-    text-align: center;
+.course-box > p {
+  font-size: 10px;
+  text-align: center;
 }
 
 .course-description {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .course-info-section {
-    width: 33%;
+  width: 33%;
 }
 
 .available-courses-section {
-    width: 67%;
+  width: 67%;
 }
 
 /* course box colours */
 
 .course-box-selected {
-    background-color: rgb(193, 225, 193);
+  background-color: rgb(193, 225, 193);
 }
 
 .course-box-prerequisite {
-    background-color: rgb(250, 200, 152);
+  background-color: rgb(250, 200, 152);
 }
 
 .course-box-postrequisite {
-    background-color: rgb(167, 199, 231);
+  background-color: rgb(167, 199, 231);
 }
 
 .course-box-unselected {
-    background-color: wheat;
+  background-color: wheat;
 }

@@ -1,23 +1,23 @@
 header {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(54, 69, 79);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(54, 69, 79);
 }
 
 header > h1 {
-    color: white;
-    font-size: 30px;
+  color: white;
+  font-size: 30px;
 }
 
 header h2 {
-    color: white;
-    font-size: 25px;
-    /* make digits same width to avoid shifting when number changes */
-    font-variant-numeric: tabular-nums;
+  color: white;
+  font-size: 25px;
+  /* make digits same width to avoid shifting when number changes */
+  font-variant-numeric: tabular-nums;
 }
 
 .course-plan-number-selector-button {
-    width: 100px;
+  width: 100px;
 }
