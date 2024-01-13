@@ -70,21 +70,27 @@ export default function CourseSelector({addCourse, coursesInfo, closeCourseSelec
         </section>
     };
 
-    return (
-        <section id='course-selector-popup' className="d-flex rounded p-1">
-            <section className="available-courses-section overflow-auto">
-                {years.map(year => getCourseListSection(getCoursesForYear(year)))}
-            </section>
-            <section className="course-info-section overflow-auto p-3">
-                <h2>{courseSelected.title}</h2>
-                <p className="course-description">{courseSelected.description}</p>
-                <button className="btn btn-secondary m-1" onClick={closeCourseSelector}>
-                    Cancel
-                </button>
-                <button className="btn btn-primary m-1" type="submit" onClick={() => addCourse(courseCodeSelected)}>
-                    Add Course
-                </button>
-            </section>
+    const getAvailableCoursesSection = () => {
+        return <section className="available-courses-section overflow-auto">
+            {years.map(year => getCourseListSection(getCoursesForYear(year)))}
         </section>
-    );
+    };
+
+    const getCourseInfoSection = () => {
+        return <section className="course-info-section overflow-auto p-3">
+            <h2>{courseSelected.title}</h2>
+            <p className="course-description">{courseSelected.description}</p>
+            <button className="btn btn-secondary m-1" onClick={closeCourseSelector}>
+                Cancel
+            </button>
+            <button className="btn btn-primary m-1" type="submit" onClick={() => addCourse(courseCodeSelected)}>
+                Add Course
+            </button>
+        </section>
+    };
+
+    return <section id='course-selector-popup' className="d-flex rounded p-1">
+        {getAvailableCoursesSection()}
+        {getCourseInfoSection()}
+    </section>
 }
