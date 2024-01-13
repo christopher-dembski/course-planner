@@ -3,18 +3,21 @@ header {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(59, 70, 78);
+    background-color: rgb(54, 69, 79);
 }
 
 header > h1 {
     color: white;
+    font-size: 30px;
 }
 
 header h2 {
     color: white;
-    margin-right: 10px;
+    font-size: 25px;
+    /* make digits same width to avoid shifting when number changes */
+    font-variant-numeric: tabular-nums;
 }
 
-.course-number-selector-button {
-    height: 75%;
+.course-plan-number-selector-button {
+    width: 100px;
 }

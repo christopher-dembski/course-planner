@@ -24,17 +24,17 @@ export default function Header({coursePlanNumber, setCoursePlanNumber}: Props) {
     
     return (
         <header className="header p-2">
-            <h1>York University - Computer Science Course Planner</h1>
+            <h1>York University | Computer Science Course Planner</h1>
             <section className={"d-flex m-3"}>
-                <h2>{`Plan ${coursePlanNumber + 1}`}</h2>
                 <button
-                    className={"btn btn-light ml-2 course-number-selector-button"}
+                    className={"course-plan-number-selector-button btn btn-light"}
                     onClick={decrementCoursePlanNumber}
                 >
                     {"<"}
                 </button>
+                <h2 className="mx-2">{`Plan ${coursePlanNumber + 1}`}</h2>
                 <button
-                    className={"btn btn-light ml-2 course-number-selector-button"}
+                    className={"course-plan-number-selector-button btn btn-light"}
                     onClick={incrementCoursePlanNumber}
                 >
                     {">"}
