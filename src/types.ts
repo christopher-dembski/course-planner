@@ -1,4 +1,4 @@
-type CourseInfo = {
+type TCourse = {
   id: string;
   title: string;
   year: number;
@@ -11,9 +11,9 @@ type CourseInfo = {
 };
 
 type CoursesInfo = {
-  [key: string]: CourseInfo;
+  [key: string]: TCourse;
 };
 
 type TCoursePlan = Array<Array<string>>;
 
-export type { CourseInfo, CoursesInfo, TCoursePlan };
+export type { TCourse, CoursesInfo, TCoursePlan };

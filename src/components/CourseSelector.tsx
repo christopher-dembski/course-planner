@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { flattenArray } from "../utilities/arrayUtilties";
 
-import { CoursesInfo, CourseInfo } from "../types";
+import { CoursesInfo, TCourse } from "../types";
 
 import "./CourseSelector.css";
 
@@ -77,7 +77,7 @@ export default function CourseSelector({
     }
   };
 
-  const getCourseSection = (course: CourseInfo) => {
+  const getCourseSection = (course: TCourse) => {
     return (
       <section
         className={`${getCourseSectionClass(course.id)} d-flex align-items-center rounded m-2 p-2 course-box`}
@@ -88,7 +88,7 @@ export default function CourseSelector({
     );
   };
 
-  const getCourseListSection = (courses: CourseInfo[]) => {
+  const getCourseListSection = (courses: TCourse[]) => {
     return (
       <section className="p-2 mb-5">
         <section className="d-flex flex-wrap justify-content-center">
