@@ -23,7 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "style": "bash dev/lint.sh"
+    "lint": "bash dev/lint.sh"
   },
   "eslintConfig": {
     "extends": [
