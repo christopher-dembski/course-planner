@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { flattenArray } from "../utilities/arrayUtilties";
 
-import { TCoursesInfo, TCourse } from "../types";
+import CourseDetails from "./CourseDetails";
 
 import "./CourseSelector.css";
+
+import { TCoursesInfo, TCourse } from "../types";
 
 type CourseSectionClass =
   | "course-box-selected"
@@ -23,7 +25,6 @@ export default function CourseSelector({
   closeCourseSelector,
 }: Props) {
   const [courseCodeSelected, setCourseCodeSelected] = useState("EECS-1001");
-  const courseSelected = coursesInfo[courseCodeSelected];
 
   useEffect(() => {
     document.body.style.overflowY = "hidden";
@@ -106,31 +107,17 @@ export default function CourseSelector({
     );
   };
 
-  const getCourseInfoSection = () => {
-    return (
-      <section className="course-info-section p-3 d-flex flex-column">
-        <h2>{courseSelected.title}</h2>
-        <button
-          className="btn btn-primary m-1"
-          type="submit"
-          onClick={() => addCourse(courseCodeSelected)}
-        >
-          Add Course
-        </button>
-        <button className="btn btn-secondary m-1" onClick={closeCourseSelector}>
-          Cancel
-        </button>
-        <p className="course-description mt-3 p-2 overflow-auto">
-          {courseSelected.description}
-        </p>
-      </section>
-    );
-  };
-
   return (
     <section id="course-selector-popup" className="d-flex rounded p-1">
       {getAvailableCoursesSection()}
-      {getCourseInfoSection()}
+      {
+        <CourseDetails
+          courseCode={courseCodeSelected}
+          coursesInfo={coursesInfo}
+          addCourse={addCourse}
+          closeCourseSelector={closeCourseSelector}
+        />
+      }
     </section>
   );
 }
