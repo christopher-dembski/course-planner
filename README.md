@@ -47,4 +47,4 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ### `npm run lint`
 
-Runs eslint and prettier on the src directory of the project. Fixes issues that can be resolved automatically and provides a warning for issues that must be resolved manually.
+Runs eslint and prettier. Fixes issues that can be resolved automatically and provides a warning for issues that must be resolved manually.
