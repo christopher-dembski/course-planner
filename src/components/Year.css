@@ -7,20 +7,37 @@
   white-space: nowrap;
 }
 
-.course-info {
-  width: 200px;
-  height: 60px;
+.course-card {
+  width: 225px;
+  height: 70px;
   border: 1px solid black;
-  justify-content: center;
+  border-left: 0 solid black;
   align-items: center;
   background-color: wheat;
 }
 
-.course-info > p {
-  font-size: 10px;
+.course-card p {
+  padding: 0 5px 5px;
+  margin-bottom: 0;
+  font-size: 11px;
   text-align: center;
+  width: 100%;
 }
 
-.open-course-selector-button {
-  height: 60px;
+.add-course-button {
+  height: 65px;
+  width: 110px;
+}
+
+.remove-course-button {
+  height: 70px;
+  width: 40px;
+  border: 1px solid black;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: rgb(229, 228, 226);
+}
+
+.remove-course-button:hover {
+  background-color: lightyellow;
 }

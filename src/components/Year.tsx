@@ -26,20 +26,20 @@ export default function Year(props: Props) {
     }
   };
 
-  const getCourseSection = (courseCode: string, semesterNumber: number) => {
+  const getCourseCard = (courseCode: string, semesterNumber: number) => {
     const course = coursesInfo[courseCode];
     return (
-      <section
-        className={"d-flex justify-content-center rounded mx-2 p-2 course-info"}
+      <div
+        className={"course-card d-flex justify-content-md-start rounded mx-2"}
       >
         <button
-          className={"btn btn-warning rounded remove-course-button"}
+          className={"remove-course-button btn btn-close-white"}
           onClick={() => removeCourse(courseCode, semesterNumber)}
         >
           X
         </button>
         <p>{`${course.id}: ${course.title}`}</p>
-      </section>
+      </div>
     );
   };
 
@@ -54,10 +54,10 @@ export default function Year(props: Props) {
         </div>
         <section className="d-flex flex-wrap justify-content-center align-items-center">
           {coursesForSemester.map((course) =>
-            getCourseSection(course, semesterNumber),
+            getCourseCard(course, semesterNumber),
           )}
           <button
-            className={"btn btn-primary btn-sm open-course-selector-button"}
+            className={"add-course-button btn btn-primary btn-sm"}
             onClick={() => openCourseSelector(semesterNumber)}
           >
             Add Course
@@ -69,7 +69,7 @@ export default function Year(props: Props) {
 
   const getSemesterSections = () => {
     return (
-      <div className="accordion-item">
+      <div>
         {coursesBySemester.map((courses, i) =>
           getCoursesSectionForSemester(courses, i),
         )}
