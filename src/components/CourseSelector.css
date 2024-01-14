@@ -1,4 +1,4 @@
-#course-selector-popup {
+#course-selector-modal {
   position: fixed;
   top: 5vh;
   left: 5vw;
@@ -7,44 +7,4 @@
   border: 1px solid black;
   text-align: center;
   background-color: rgb(229, 228, 226);
-}
-
-.available-courses-section {
-  width: 67%;
-}
-
-.course-box {
-  width: 200px;
-  height: 50px;
-  border: 1px solid black;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-}
-
-.course-box:hover {
-  background-color: lightyellow;
-}
-
-.course-box > p {
-  font-size: 10px;
-  text-align: center;
-}
-
-/* course box colours */
-
-.course-box-selected {
-  background-color: rgb(193, 225, 193);
-}
-
-.course-box-prerequisite {
-  background-color: rgb(250, 200, 152);
-}
-
-.course-box-postrequisite {
-  background-color: rgb(167, 199, 231);
-}
-
-.course-box-unselected {
-  background-color: wheat;
 }
