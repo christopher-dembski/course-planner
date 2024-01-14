@@ -10,10 +10,10 @@ type TCourse = {
   crossListedAs?: string;
 };
 
-type CoursesInfo = {
+type TCoursesInfo = {
   [key: string]: TCourse;
 };
 
 type TCoursePlan = Array<Array<string>>;
 
-export type { TCourse, CoursesInfo, TCoursePlan };
+export type { TCourse, TCoursesInfo, TCoursePlan };

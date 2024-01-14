@@ -1,4 +1,4 @@
-import { CoursesInfo } from "../types";
+import { TCoursesInfo } from "../types";
 
 export default {
   "EECS-1001": {
@@ -894,4 +894,4 @@ export default {
       "ISCI-1302",
     ],
   },
-} as CoursesInfo;
+} as TCoursesInfo;

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { flattenArray } from "../utilities/arrayUtilties";
 
-import { CoursesInfo, TCourse } from "../types";
+import { TCoursesInfo, TCourse } from "../types";
 
 import "./CourseSelector.css";
 
@@ -13,7 +13,7 @@ type CourseSectionClass =
 
 interface Props {
   addCourse: (courseId: string) => void;
-  coursesInfo: CoursesInfo;
+  coursesInfo: TCoursesInfo;
   closeCourseSelector: () => void;
 }
 
