@@ -1,13 +1,13 @@
 import React from "react";
 
 import "./Header.css";
-import { CoursePlans } from "../types";
+import { TCoursePlan } from "../types";
 import coursePlans from "../data/defaultCoursePlans";
 
 interface Props {
   coursePlanNumber: number;
   setCoursePlanNumber: (coursePLanNumber: number) => void;
-  coursePlans: CoursePlans;
+  coursePlans: Array<TCoursePlan>;
 }
 
 export default function Header({

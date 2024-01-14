@@ -4,9 +4,9 @@ import Header from "./components/Header";
 import CoursePlan from "./components/CoursePlan";
 import CourseSelector from "./components/CourseSelector";
 
-import "./App.css";
+import { TCoursePlan } from "./types";
 
-import { CoursePlans } from "./types";
+import "./App.css";
 
 import coursesInfo from "./data/coursesInfo";
 import defaultCoursePlans from "./data/defaultCoursePlans";
@@ -14,7 +14,7 @@ import defaultCoursePlans from "./data/defaultCoursePlans";
 const loadCoursePlans = () => {
   const savedCoursePlans = localStorage.getItem("course-plans");
   return savedCoursePlans
-    ? (JSON.parse(savedCoursePlans) as CoursePlans)
+    ? (JSON.parse(savedCoursePlans) as Array<TCoursePlan>)
     : defaultCoursePlans;
 };
 

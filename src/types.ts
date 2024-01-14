@@ -14,8 +14,6 @@ type CoursesInfo = {
   [key: string]: CourseInfo;
 };
 
-type CoursePlan = Array<Array<string>>;
+type TCoursePlan = Array<Array<string>>;
 
-type CoursePlans = Array<CoursePlan>;
-
-export type { CourseInfo, CoursesInfo, CoursePlan, CoursePlans };
+export type { CourseInfo, CoursesInfo, TCoursePlan };

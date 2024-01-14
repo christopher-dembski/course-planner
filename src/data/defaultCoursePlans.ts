@@ -1,4 +1,4 @@
-import { CoursePlans } from "../types";
+import { TCoursePlan } from "../types";
 
 export default [
   [
@@ -20,4 +20,4 @@ export default [
   [[], [], [], [], [], [], [], [], [], [], [], []], // course plan 3
   [[], [], [], [], [], [], [], [], [], [], [], []], // course plan 4
   [[], [], [], [], [], [], [], [], [], [], [], []], // course plan 5
-] as CoursePlans;
+] as Array<TCoursePlan>;

@@ -1,10 +1,10 @@
 import React from "react";
-import { CoursePlans } from "../types";
+import { TCoursePlan } from "../types";
 import coursesInfo from "../data/coursesInfo";
 import "./CoursePlan.css";
 
 interface Props {
-  coursePlans: CoursePlans;
+  coursePlans: Array<TCoursePlan>;
   openCourseSelector: (termNumberToAddCourseFor: number) => void;
   coursePlanNumber: number;
   removeCourse: (courseId: string, semesterNumber: number) => void;
