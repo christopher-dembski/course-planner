@@ -1,5 +1,9 @@
+.year-header {
+  background-color: rgb(167, 199, 231);
+}
+
 .semester-titles {
-  width: 200px;
+  width: 110px;
   white-space: nowrap;
 }
 
@@ -18,5 +22,5 @@
 }
 
 .open-course-selector-button {
-  height: 50px;
+  height: 60px;
 }
