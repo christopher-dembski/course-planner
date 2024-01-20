@@ -26,15 +26,17 @@ export default function Header({
   return (
     <header className="header position-sticky top-0 p-2">
       <h1>York University | Computer Science Course Planner</h1>
-      <section className={"d-flex m-3"}>
+      <section className={"d-flex p-2"}>
+        <h2>{`Plan ${coursePlanNumber + 1}`}</h2>
         <button
+          id={"course-plan-number-selector-button-left"}
           className={"course-plan-number-selector-button btn btn-light"}
           onClick={decrementCoursePlanNumber}
         >
           {"<"}
         </button>
-        <h2 className="mx-2">{`Plan ${coursePlanNumber + 1}`}</h2>
         <button
+          id={"course-plan-number-selector-button-right"}
           className={"course-plan-number-selector-button btn btn-light"}
           onClick={incrementCoursePlanNumber}
         >

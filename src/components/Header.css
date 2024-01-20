@@ -14,10 +14,24 @@ header > h1 {
 header h2 {
   color: white;
   font-size: 25px;
+  margin-top: 5px;
   /* make digits same width to avoid shifting when number changes */
   font-variant-numeric: tabular-nums;
 }
 
 .course-plan-number-selector-button {
   width: 100px;
+}
+
+#course-plan-number-selector-button-left {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0.5px solid black;
+  margin-left: 15px;
+}
+
+#course-plan-number-selector-button-right {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: 0.5px solid black;
 }
