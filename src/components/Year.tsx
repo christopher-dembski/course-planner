@@ -34,7 +34,9 @@ export default function Year(props: Props) {
       >
         <button
           className={"remove-course-button btn btn-close-white"}
-          onClick={() => removeCourse(courseCode, semesterNumber)}
+          onClick={() =>
+            removeCourse(courseCode, (year - 1) * 3 + semesterNumber)
+          }
         >
           X
         </button>
@@ -58,7 +60,7 @@ export default function Year(props: Props) {
           )}
           <button
             className={"add-course-button btn btn-primary btn-sm"}
-            onClick={() => openCourseSelector(semesterNumber)}
+            onClick={() => openCourseSelector((year - 1) * 3 + semesterNumber)}
           >
             Add Course
           </button>
