@@ -3,7 +3,7 @@
 }
 
 .semester-titles {
-  width: 110px;
+  width: 112px;
   white-space: nowrap;
 }
 
@@ -25,6 +25,7 @@
 }
 
 .add-course-button {
+  margin-left: 7px;
   height: 65px;
   width: 110px;
 }
