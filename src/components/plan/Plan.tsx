@@ -9,7 +9,7 @@ interface Props {
   removeCourse: (courseId: string, semesterNumber: number) => void;
 }
 
-export default function CoursePlan(props: Props) {
+export default function Plan(props: Props) {
   const { coursePlans, coursePlanNumber, openCourseSelector, removeCourse } =
     props;
 

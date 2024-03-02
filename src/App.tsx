@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import Header from "./components/header/Header";
-import CoursePlan from "./components/plan/CoursePlan";
+import Plan from "./components/plan/Plan";
 import CourseSelector from "./components/selector/CourseSelector";
 
 import { TCoursePlan } from "./types";
@@ -65,7 +65,7 @@ function App() {
           setCoursePlanNumber={setCoursePlanNumber}
           coursePlans={coursePlans}
         />
-        <CoursePlan
+        <Plan
           coursePlans={coursePlans}
           coursePlanNumber={coursePlanNumber}
           openCourseSelector={openCourseSelector}
