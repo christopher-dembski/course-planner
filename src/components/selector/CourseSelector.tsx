@@ -5,7 +5,7 @@ import CourseDetails from "./CourseDetails";
 
 import "./CourseSelector.css";
 
-import { TCoursesInfo } from "../types";
+import { TCoursesInfo } from "../../types";
 
 interface Props {
   coursesInfo: TCoursesInfo;

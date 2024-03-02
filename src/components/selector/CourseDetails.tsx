@@ -2,7 +2,7 @@ import React from "react";
 
 import "./CourseDetails.css";
 
-import { TCoursesInfo } from "../types";
+import { TCoursesInfo } from "../../types";
 
 interface Props {
   courseCode: string;

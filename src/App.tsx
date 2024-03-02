@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-import Header from "./components/Header";
-import CoursePlan from "./components/CoursePlan";
-import CourseSelector from "./components/CourseSelector";
+import Header from "./components/header/Header";
+import CoursePlan from "./components/plan/CoursePlan";
+import CourseSelector from "./components/selector/CourseSelector";
 
 import { TCoursePlan } from "./types";
 

@@ -1,10 +1,10 @@
 import React from "react";
 
-import { flattenArray } from "../utilities/arrayUtilties";
+import { flattenArray } from "../../utilities/arrayUtilties";
 
 import "./AvailableCourses.css";
 
-import { TCoursesInfo, TCourse } from "../types";
+import { TCoursesInfo, TCourse } from "../../types";
 
 type CourseSectionClass =
   | "course-box-selected"

@@ -1,5 +1,5 @@
 import React from "react";
-import { TCoursePlan } from "../types";
+import { TCoursePlan } from "../../types";
 import Year from "./Year";
 
 interface Props {

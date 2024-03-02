@@ -1,5 +1,5 @@
 import React from "react";
-import coursesInfo from "../data/coursesInfo";
+import coursesInfo from "../../data/coursesInfo";
 import "./Year.css";
 
 interface Props {

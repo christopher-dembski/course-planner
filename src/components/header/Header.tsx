@@ -1,8 +1,8 @@
 import React from "react";
 
 import "./Header.css";
-import { TCoursePlan } from "../types";
-import coursePlans from "../data/defaultCoursePlans";
+import { TCoursePlan } from "../../types";
+import coursePlans from "../../data/defaultCoursePlans";
 
 interface Props {
   coursePlanNumber: number;
