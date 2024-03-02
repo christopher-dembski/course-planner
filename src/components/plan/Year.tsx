@@ -6,7 +6,6 @@ interface Props {
   year: number;
   coursesBySemester: Array<Array<string>>;
   openCourseSelector: (termNumberToAddCourseFor: number) => void;
-  coursePlanNumber: number;
   removeCourse: (courseId: string, semesterNumber: number) => void;
 }
 

@@ -1,44 +1,40 @@
 import React from "react";
 
 import "./Header.css";
-import { TCoursePlan } from "../../types";
-import coursePlans from "../../data/defaultCoursePlans";
+import { TPlan } from "../../types";
+import defaultPlan from "../../data/defaultPlan";
 
 interface Props {
-  coursePlanNumber: number;
-  setCoursePlanNumber: (coursePLanNumber: number) => void;
-  coursePlans: Array<TCoursePlan>;
+  planNumber: number;
+  setPlanNumber: (planNumber: number) => void;
+  plans: Array<TPlan>;
 }
 
-export default function Header({
-  coursePlanNumber,
-  setCoursePlanNumber,
-}: Props) {
-  const incrementCoursePlanNumber = () => {
-    if (coursePlanNumber < coursePlans.length - 1)
-      setCoursePlanNumber(coursePlanNumber + 1);
+export default function Header({ planNumber, setPlanNumber }: Props) {
+  const incrementPlanNumber = () => {
+    if (planNumber < defaultPlan.length - 1) setPlanNumber(planNumber + 1);
   };
 
-  const decrementCoursePlanNumber = () => {
-    if (coursePlanNumber > 0) setCoursePlanNumber(coursePlanNumber - 1);
+  const decrementPlanNumber = () => {
+    if (planNumber > 0) setPlanNumber(planNumber - 1);
   };
 
   return (
     <header className="header position-sticky top-0 p-2">
       <h1>York University | Computer Science Course Planner</h1>
       <section className={"d-flex p-2"}>
-        <h2>{`Plan ${coursePlanNumber + 1}`}</h2>
+        <h2>{`Plan ${planNumber + 1}`}</h2>
         <button
-          id={"course-plan-number-selector-button-left"}
-          className={"course-plan-number-selector-button btn btn-light"}
-          onClick={decrementCoursePlanNumber}
+          id={"plan-selector-button-left"}
+          className={"plan-selector-button btn btn-light"}
+          onClick={decrementPlanNumber}
         >
           {"<"}
         </button>
         <button
-          id={"course-plan-number-selector-button-right"}
-          className={"course-plan-number-selector-button btn btn-light"}
-          onClick={incrementCoursePlanNumber}
+          id={"plan-selector-button-right"}
+          className={"plan-selector-button btn btn-light"}
+          onClick={incrementPlanNumber}
         >
           {">"}
         </button>

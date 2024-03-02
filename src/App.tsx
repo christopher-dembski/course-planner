@@ -4,25 +4,23 @@ import Header from "./components/header/Header";
 import Plan from "./components/plan/Plan";
 import CourseSelector from "./components/selector/CourseSelector";
 
-import { TCoursePlan } from "./types";
+import { TPlan } from "./types";
 
 import "./App.css";
 
 import coursesInfo from "./data/coursesInfo";
-import defaultCoursePlans from "./data/defaultCoursePlans";
+import defaultPlans from "./data/defaultPlan";
 
 const loadCoursePlans = () => {
-  const savedCoursePlans = localStorage.getItem("course-plans");
-  return savedCoursePlans
-    ? (JSON.parse(savedCoursePlans) as Array<TCoursePlan>)
-    : defaultCoursePlans;
+  const savedPlans = localStorage.getItem("course-plans");
+  return savedPlans ? (JSON.parse(savedPlans) as Array<TPlan>) : defaultPlans;
 };
 
 function App() {
   const [isCourseSelectorDisplayed, setIsCourseSelectorDisplayed] =
     useState(false);
-  const [coursePlans, setCoursePlans] = useState(loadCoursePlans());
-  const [coursePlanNumber, setCoursePlanNumber] = useState(0); // index of current course plan to display
+  const [plans, setPlans] = useState(loadCoursePlans());
+  const [planNumber, setPlanNumber] = useState(0); // index of current course plan to display
   const [termNumber, setTermNumber] = useState(0); // index for term to add course to
 
   const openCourseSelector = (termNumberToAddCourseFor: number) => {
@@ -36,24 +34,21 @@ function App() {
 
   const addCourse = (courseId: string) => {
     setIsCourseSelectorDisplayed(false);
-    setCoursePlans((prevCoursePlans) => {
-      const newCoursePlans = JSON.parse(JSON.stringify(prevCoursePlans));
-      newCoursePlans[coursePlanNumber][termNumber].push(courseId);
-      localStorage.setItem("course-plans", JSON.stringify(newCoursePlans));
-      return newCoursePlans;
+    setPlans((currentPlans) => {
+      const newPlans = JSON.parse(JSON.stringify(currentPlans));
+      newPlans[planNumber][termNumber].push(courseId);
+      localStorage.setItem("course-plans", JSON.stringify(newPlans));
+      return newPlans;
     });
   };
 
-  const removeCourse = (courseIdToRemove: string, semesterNumber: number) => {
-    setCoursePlans((prevCoursePlans) => {
-      const newCoursePlans = JSON.parse(JSON.stringify(prevCoursePlans));
-      const courseIndex =
-        newCoursePlans[coursePlanNumber][semesterNumber].indexOf(
-          courseIdToRemove,
-        );
-      newCoursePlans[coursePlanNumber][semesterNumber].splice(courseIndex, 1);
-      localStorage.setItem("course-plans", JSON.stringify(newCoursePlans));
-      return newCoursePlans;
+  const removeCourse = (courseId: string, semester: number) => {
+    setPlans((currentPlans) => {
+      const newPlans = JSON.parse(JSON.stringify(currentPlans));
+      const courseIndex = newPlans[planNumber][semester].indexOf(courseId);
+      newPlans[planNumber][semester].splice(courseIndex, 1);
+      localStorage.setItem("course-plans", JSON.stringify(newPlans));
+      return newPlans;
     });
   };
 
@@ -61,13 +56,13 @@ function App() {
     <section>
       <div id="main">
         <Header
-          coursePlanNumber={coursePlanNumber}
-          setCoursePlanNumber={setCoursePlanNumber}
-          coursePlans={coursePlans}
+          planNumber={planNumber}
+          setPlanNumber={setPlanNumber}
+          plans={plans}
         />
         <Plan
-          coursePlans={coursePlans}
-          coursePlanNumber={coursePlanNumber}
+          plans={plans}
+          planNumber={planNumber}
           openCourseSelector={openCourseSelector}
           removeCourse={removeCourse}
         />
