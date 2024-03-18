@@ -86,7 +86,7 @@ export default function Year(props: Props) {
   };
 
   return (
-    <div className="rounded m-2">
+    <div className="rounded">
       <h2 className="year-header p-2 rounded">Year {year}</h2>
       {getSemesterSections()}
     </div>
