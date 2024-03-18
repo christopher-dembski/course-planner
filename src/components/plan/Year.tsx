@@ -1,16 +1,23 @@
 import React from "react";
-import coursesInfo from "../../data/coursesInfo";
 import "./Year.css";
+import { TCoursesData } from "../../types";
 
 interface Props {
   year: number;
   coursesBySemester: Array<Array<string>>;
   openCourseSelector: (termNumberToAddCourseFor: number) => void;
   removeCourse: (courseId: string, semesterNumber: number) => void;
+  coursesData: TCoursesData;
 }
 
 export default function Year(props: Props) {
-  const { year, coursesBySemester, openCourseSelector, removeCourse } = props;
+  const {
+    year,
+    coursesBySemester,
+    openCourseSelector,
+    removeCourse,
+    coursesData,
+  } = props;
 
   const getSemesterSeason = (semesterNumber: number) => {
     switch (semesterNumber) {
@@ -26,7 +33,7 @@ export default function Year(props: Props) {
   };
 
   const getCourseCard = (courseCode: string, semesterNumber: number) => {
-    const course = coursesInfo[courseCode];
+    const course = coursesData[courseCode];
     return (
       <div
         className={"course-card d-flex justify-content-md-start rounded mx-2"}

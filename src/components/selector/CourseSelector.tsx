@@ -5,10 +5,10 @@ import CourseDetails from "./CourseDetails";
 
 import "./CourseSelector.css";
 
-import { TCoursesInfo } from "../../types";
+import { TCoursesData } from "../../types";
 
 interface Props {
-  coursesInfo: TCoursesInfo;
+  coursesInfo: TCoursesData;
   addCourse: (courseId: string) => void;
   closeCourseSelector: () => void;
 }

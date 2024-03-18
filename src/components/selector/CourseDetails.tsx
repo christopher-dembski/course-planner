@@ -2,11 +2,11 @@ import React from "react";
 
 import "./CourseDetails.css";
 
-import { TCoursesInfo } from "../../types";
+import { TCoursesData } from "../../types";
 
 interface Props {
   courseCode: string;
-  coursesInfo: TCoursesInfo;
+  coursesInfo: TCoursesData;
   addCourse: (courseId: string) => void;
   closeCourseSelector: () => void;
 }

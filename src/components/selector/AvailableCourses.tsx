@@ -4,7 +4,7 @@ import { flattenArray } from "../../utilities/arrayUtilties";
 
 import "./AvailableCourses.css";
 
-import { TCoursesInfo, TCourse } from "../../types";
+import { TCoursesData, TCourse } from "../../types";
 
 type CourseSectionClass =
   | "course-box-selected"
@@ -15,7 +15,7 @@ type CourseSectionClass =
 interface Props {
   courseCodeSelected: string;
   setCourseCodeSelected: (courseCode: string) => void;
-  coursesInfo: TCoursesInfo;
+  coursesInfo: TCoursesData;
 }
 
 export default function AvailableCourses({

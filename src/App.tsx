@@ -4,16 +4,20 @@ import Header from "./components/header/Header";
 import Plan from "./components/plan/Plan";
 import CourseSelector from "./components/selector/CourseSelector";
 
-import { TPlan } from "./types";
+import { TCoursesData, TPlan } from "./types";
 
 import "./App.css";
 
-import coursesInfo from "./data/coursesInfo";
 import defaultPlans from "./data/defaultPlan";
+import coursesData from "./data/coursesData.json";
 
 const loadCoursePlans = () => {
   const savedPlans = localStorage.getItem("course-plans");
   return savedPlans ? (JSON.parse(savedPlans) as Array<TPlan>) : defaultPlans;
+};
+
+const loadCoursesData = (): TCoursesData => {
+  return Object.freeze(coursesData);
 };
 
 function App() {
@@ -52,6 +56,8 @@ function App() {
     });
   };
 
+  const coursesData = loadCoursesData();
+
   return (
     <section>
       <div id="main">
@@ -65,11 +71,12 @@ function App() {
           planNumber={planNumber}
           openCourseSelector={openCourseSelector}
           removeCourse={removeCourse}
+          coursesData={coursesData}
         />
       </div>
       {isCourseSelectorDisplayed && (
         <CourseSelector
-          coursesInfo={coursesInfo}
+          coursesInfo={coursesData}
           addCourse={addCourse}
           closeCourseSelector={closeCourseSelector}
         />

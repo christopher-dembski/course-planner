@@ -1,5 +1,5 @@
 import React from "react";
-import { TPlan } from "../../types";
+import { TCoursesData, TPlan } from "../../types";
 import Year from "./Year";
 
 interface Props {
@@ -7,10 +7,12 @@ interface Props {
   planNumber: number;
   openCourseSelector: (termNumberToAddCourseFor: number) => void;
   removeCourse: (courseId: string, semesterNumber: number) => void;
+  coursesData: TCoursesData;
 }
 
 export default function Plan(props: Props) {
-  const { plans, planNumber, openCourseSelector, removeCourse } = props;
+  const { plans, planNumber, openCourseSelector, removeCourse, coursesData } =
+    props;
 
   const plan = plans[planNumber];
   const semestersPerYear = 3;
@@ -30,6 +32,7 @@ export default function Plan(props: Props) {
             coursesBySemester={coursesBySemester}
             openCourseSelector={openCourseSelector}
             removeCourse={removeCourse}
+            coursesData={coursesData}
           />
         );
       })}
