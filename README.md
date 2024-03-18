@@ -9,10 +9,6 @@ Currently, this project is not deployed. To run it locally, please follow the in
 
 This project draws inspiration from https://presidentkevvol.github.io/YorkCSClassList/.
 
-![Course Plan](public/readme/course_plan.png)
-
-![Course Selector](public/readme/course_selector.png)
-
 ## Getting started
 
 <details>
@@ -73,3 +69,10 @@ Runs eslint and prettier. Fixes issues that can be resolved automatically and pr
 
 
 </details>
+
+
+## Images
+
+![Course Plan](public/readme/course_plan.png)
+
+![Course Selector](public/readme/course_selector.png)
