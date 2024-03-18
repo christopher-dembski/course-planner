@@ -83,7 +83,7 @@ export default function Year(props: Props) {
   };
 
   return (
-    <div className="rounded">
+    <div className="rounded m-2">
       <h2 className="year-header p-2 rounded">Year {year}</h2>
       <div>
         {coursesBySemester.map((courses, semesterNumber) =>
