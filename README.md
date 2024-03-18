@@ -1,6 +1,23 @@
 # York University Computer Science: Course Planner
 
+This project is a simple web-app designed to help York University computer science students plan their courses.
+
+> [!CAUTION]
+> This project is not affiliated with York University and is not actively maintained. It may contain incomplete, inaccurate, or out of date information regarding courses and prerequisites. Always consult official York University resources when planning your degree or selecting courses.
+
+Currently, this project is not deployed. To run it locally, please follow the instructions in the _Getting Started_ section.
+
+This project draws inspiration from https://presidentkevvol.github.io/YorkCSClassList/.
+
+[Course Plan](public/readme_images/course_plan.png)
+
+[Course Selector](public/readme_images/course_selector.png)
+
 ## Getting started
+
+<details>
+
+<summary>Setting up a development environment</summary>
 
 To get started, clone the repo with `git clone https://github.com/christopher-dembski/course-planner.git`.
 
@@ -8,9 +25,14 @@ Then, run `npm install` to install dependencies.
 
 To run the app in development mode, run `npm start`.
 
+</details>
+
+
 ## Available Scripts
 
-In the project directory, you can run:
+<details>
+
+<summary>In the project directory, you can run:</summary>
 
 ### `npm start`
 
@@ -48,3 +70,6 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ### `npm run lint`
 
 Runs eslint and prettier. Fixes issues that can be resolved automatically and provides a warning for issues that must be resolved manually.
+
+
+</details>
