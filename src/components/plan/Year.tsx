@@ -10,6 +10,8 @@ interface Props {
   coursesData: TCoursesData;
 }
 
+const SEMESTERS_PER_YEAR = 3;
+
 export default function Year(props: Props) {
   const {
     year,
@@ -18,6 +20,11 @@ export default function Year(props: Props) {
     removeCourse,
     coursesData,
   } = props;
+
+  const getSemesterIndex = (semesterNumber: number) => {
+    // -1 because year starts at 1
+    return (year - 1) * SEMESTERS_PER_YEAR + semesterNumber;
+  };
 
   const getSemesterSeason = (semesterNumber: number) => {
     switch (semesterNumber) {
@@ -41,7 +48,7 @@ export default function Year(props: Props) {
         <button
           className={"remove-course-button btn btn-close-white"}
           onClick={() =>
-            removeCourse(courseCode, (year - 1) * 3 + semesterNumber)
+            removeCourse(courseCode, getSemesterIndex(semesterNumber))
           }
         >
           X
@@ -51,7 +58,7 @@ export default function Year(props: Props) {
     );
   };
 
-  const getCoursesSectionForSemester = (
+  const getSemesterSection = (
     coursesForSemester: string[],
     semesterNumber: number,
   ) => {
@@ -66,7 +73,7 @@ export default function Year(props: Props) {
           )}
           <button
             className={"add-course-button btn btn-primary btn-sm"}
-            onClick={() => openCourseSelector((year - 1) * 3 + semesterNumber)}
+            onClick={() => openCourseSelector(getSemesterIndex(semesterNumber))}
           >
             Add Course
           </button>
@@ -75,20 +82,14 @@ export default function Year(props: Props) {
     );
   };
 
-  const getSemesterSections = () => {
-    return (
-      <div>
-        {coursesBySemester.map((courses, i) =>
-          getCoursesSectionForSemester(courses, i),
-        )}
-      </div>
-    );
-  };
-
   return (
     <div className="rounded">
       <h2 className="year-header p-2 rounded">Year {year}</h2>
-      {getSemesterSections()}
+      <div>
+        {coursesBySemester.map((courses, semesterNumber) =>
+          getSemesterSection(courses, semesterNumber),
+        )}
+      </div>
     </div>
   );
 }
