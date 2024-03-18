@@ -9,9 +9,9 @@ Currently, this project is not deployed. To run it locally, please follow the in
 
 This project draws inspiration from https://presidentkevvol.github.io/YorkCSClassList/.
 
-[Course Plan](public/readme_images/course_plan.png)
+![Course Plan](public/readme/course_plan.png)
 
-[Course Selector](public/readme_images/course_selector.png)
+![Course Selector](public/readme/course_selector.png)
 
 ## Getting started
 
