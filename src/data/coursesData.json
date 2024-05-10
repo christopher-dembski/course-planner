@@ -383,15 +383,6 @@
     "prerequisites": [["EECS-2030", "EECS-1030"], ["EECS-3311"]],
     "courseCreditExclusions": []
   },
-  "EECS-4314": {
-    "id": "EECS-4314",
-    "title": "Advanced Software Engineering",
-    "year": 4,
-    "description": "Advanced software engineering methods, processes and measurements (from requirements through to system evolution) for managing and delivering reliable software on time and within budget. Understanding the different types of systems and their associated technical, ethical and professional issues. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 3311 3.00.",
-    "credits": 3,
-    "prerequisites": [["EECS-2030", "EECS-1030"], ["EECS-3311"]],
-    "courseCreditExclusions": []
-  },
   "EECS-4401": {
     "id": "EECS-4401",
     "title": "Artificial Intelligence",
