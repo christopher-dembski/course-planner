@@ -45,24 +45,6 @@
     "prerequisites": [["EECS-1012", "EECS-1015"]],
     "courseCreditExclusions": ["EECS-1021", "EECS-1020"]
   },
-  "EECS-1910": {
-    "id": "EECS-1910",
-    "title": "Industry Practicum",
-    "year": 1,
-    "description": "This course is only available to students in the Industry Partnership Stream of the Computer Science Honours BSc (enrollment by permission). Students in the stream may enroll in the course during a term for which they are employed by the industrial partner. The learning outcomes of the course will be approved by the instructor prior to enrollment. Prerequisites: No prerequisite",
-    "credits": 3,
-    "prerequisites": [],
-    "courseCreditExclusions": []
-  },
-  "EECS-1911": {
-    "id": "EECS-1911",
-    "title": "Industry Practicum",
-    "year": 1,
-    "description": "This course is only available to students in the Industry Partnership Stream of the Computer Science Honours BSc (enrollment by permission). Students in the stream may enroll in the course during a term for which they are employed by the industrial partner. The learning outcomes of the course will be approved by the instructor prior to enrollment. Prerequisites: No prerequisite",
-    "credits": 3,
-    "prerequisites": [],
-    "courseCreditExclusions": []
-  },
   "EECS-2001": {
     "id": "EECS-2001",
     "title": "Introduction to the Theory of Computation",
@@ -113,24 +95,6 @@
     "description": "Tools commonly used in the software development process: the C language; shell programming; filters and pipes; version control systems and \"make\"; debugging and testing. Prerequisites: Cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); one of LE/EECS 1021 3.00 or LE/EECS 1022 3.00 or LE/EECS 1030 3.00 or LE/EECS 1720 3.00",
     "credits": 3,
     "prerequisites": [["EECS-1021", "EECS-1022", "EECS-1030", "EECS-1720"]],
-    "courseCreditExclusions": []
-  },
-  "EECS-2910": {
-    "id": "EECS-2910",
-    "title": "Industry Practicum",
-    "year": 2,
-    "description": "This course is only available to students in the Industry Partnership Stream of the Computer Science Honours BSc (enrollment by permission). Students in the stream may enroll in the course during a term for which they are employed by the industrial partner. The learning outcomes of the course will be approved by the instructor prior to enrollment. Prerequisites: 12 EECS credits in the 1000 level",
-    "credits": 3,
-    "prerequisites": [],
-    "courseCreditExclusions": []
-  },
-  "EECS-2911": {
-    "id": "EECS-2911",
-    "title": "Industry Practicum",
-    "year": 2,
-    "description": "This course is only available to students in the Industry Partnership Stream of the Computer Science Honours BSc (enrollment by permission). Students in the stream may enroll in the course during a term for which they are employed by the industrial partner. The learning outcomes of the course will be approved by the instructor prior to enrollment. Prerequisites: 12 EECS credits in the 1000 level",
-    "credits": 3,
-    "prerequisites": [],
     "courseCreditExclusions": []
   },
   "EECS-3000": {
@@ -185,15 +149,6 @@
     "prerequisites": [["MATH-3241", "EECS-3121"]],
     "courseCreditExclusions": []
   },
-  "EECS-3213": {
-    "id": "EECS-3213",
-    "title": "Communication Networks",
-    "year": 3,
-    "description": "Introduces the basics of communications and networking. Topics include transmission media; fundamental limits; protocols and hierarchies; the OSI model; encoding of data as signals; error and flow control; medium access; routing; internetworking; transport services; high-level applications. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; SC/MATH 1310 3.00. Previously offered as: LE/CSE 3213 3.00. PRIOR TO SUMMER 2013: SC/CSE 3213 3.00.",
-    "credits": 3,
-    "prerequisites": [["EECS-2030", "EECS-1030"], ["MATH-1310"]],
-    "courseCreditExclusions": []
-  },
   "EECS-3214": {
     "id": "EECS-3214",
     "title": "Computer Network Protocols and Applications",
@@ -210,15 +165,6 @@
     "description": "Introduction to the design of embedded systems using both hardware and software. Topics include microcontrollers; their architecture, and programming; design and implementation of embedded systems using field programmable gate arrays. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 2031 3.00, LE/EECS 3201 4.00. Course Credit Exclusion: LE/CSE 3215 4.00.",
     "credits": 3,
     "prerequisites": [["EECS-2031"], ["EECS-3201"]],
-    "courseCreditExclusions": []
-  },
-  "EECS-3216": {
-    "id": "EECS-3216",
-    "title": " Digital Systems Engineering",
-    "year": 3,
-    "description": "This is a project intensive course to introduce students to modeling, implementation, testing, and validation of hardware-based embedded systems. The emphasis in this course is on complex digital systems that interact with physical systems. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"), LE/EECS 2032 4.00, or LE/EECS 2031 3.00, and LE/EECS 3201 3.00.",
-    "credits": 3,
-    "prerequisites": [["EECS-2032", "EECS-2031"], ["EECS-3201"]],
     "courseCreditExclusions": []
   },
   "EECS-3221": {
@@ -248,15 +194,6 @@
     ],
     "courseCreditExclusions": []
   },
-  "EECS-3342": {
-    "id": "EECS-3342",
-    "title": "System Specification and Refinement",
-    "year": 3,
-    "description": "Theory and tools for specifying computer systems (sequential, concurrent and embedded). Specification (via set theory and predicate logic), modelling, abstraction, refinement and formal reasoning are undertaken before code development so that systems are correct by construction under the stated assumptions. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 2011 3.00; SC/MATH 1090 3.00.",
-    "credits": 3,
-    "prerequisites": [["EECS-2030", "EECS-1030"], ["EECS-2011"], ["MATH-1090"]],
-    "courseCreditExclusions": []
-  },
   "EECS-3401": {
     "id": "EECS-3401",
     "title": "Introduction to Artificial Intelligence and Logic Programming",
@@ -266,14 +203,31 @@
     "prerequisites": [["EECS-2030", "EECS-1030"], ["EECS-2011"], ["MATH-1090"]],
     "courseCreditExclusions": []
   },
-  "EECS-3451": {
-    "id": "EECS-3451",
-    "title": "Signals and Systems",
+  "EECS-3404": {
+    "id": "EECS-3404",
+    "title": "Applied Machine Learning",
     "year": 3,
-    "description": "An introduction to the mathematical background in signals and systems; signal and image processing: sampling, discrete Fourier transform, filtering; linear system theory; Kalman filtering; feedback. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 2021 4.00, SC/MATH 1310 3.00. Course credit exclusions: SC/MATH 4130B 3.00, SC/PHYS 4060 3.00. Previously offered as: LE/CSE 3451 4.00. PRIOR TO FALL 2014: course credit exclusions: SC/MATH 4830 3.00. PRIOR TO SUMMER 2013: course credit exclusions: SC/CSE 3451 4.00, SC/EATS 4020 3.00.",
+    "description": "Machine learning is the study of algorithms that learn how to perform tasks or predict outcomes from prior experience. This course introduces students to basic machine learning concepts and algorithms in an accessible and application- oriented way. A project-based learning approach is used to explore how machine learning methods are used in diverse real-world applications and introduces students to popular machine learning toolkits, focusing on the programming required to build machine learning systems to solve practical problems. The course will also discuss potential limitations and risks of machine learning systems, including ethical issues, bias, data ownership and privacy. Course Credit Exclusions: LE/EECS 3405 3.00; LE/EECS 4404 3.00. Course Prerequisites: One of the following: LE/EECS 1516 3.00 or LE/EECS 2032 3.00 or LE/EECS 2031 3.00; One of SC/MATH 1025 3.00 or SC/MATH 1021 3.00.",
     "credits": 3,
-    "prerequisites": [["EECS-2021"], ["MATH-1310"]],
-    "courseCreditExclusions": ["MATH-4130B", "PHYS-4060"]
+    "prerequisites": [
+      ["EECS-1516", "EECS-2032", "EECS-2031"],
+      ["MATH-1025", "MATH-1021"]
+    ],
+    "courseCreditExclusions": []
+  },
+  "EECS-3405": {
+    "id": "EECS-3405",
+    "title": "Fundamentals of Machine Learning",
+    "year": 3,
+    "description": "This course introduces fundamental machine learning concepts and techniques in a rigorous way to illustrate how basic machine learning methods are constructed from the underlying motivations and mathematical principles. It also explores in depth how to formulate machine learning problems and how to implement basic machine learning systems to solve various problems from diverse real-world application domain. The course emphasizes the mathematical foundations of machine learning as well as practical experience in implementing machine learning algorithms. Pre-requisites: LE/EECS 2030 3.00 or LE/EECS 2031 3.00 or LE/EECS 2032 4.00 or LE/EECS 1516 3.00; SC/MATH 2030 3.00 or SC/MATH 2930 3.00 or SC/MATH 1131 3.00; SC/MATH 1025 3.00 or SC/MATH 1021; SC/MATH 2015 3.00 or SC/MATH 2310 3.00. Course Credit Exclusions: LE/EECS 3404 3.00 and LE/EECS 4404 3.00.",
+    "credits": 3,
+    "prerequisites": [
+      ["EECS-2030", "EECS-2031", "EECS-2032", "EECS-156"],
+      ["MATH-2030", "MATH-2930", "MATH-1131"],
+      ["MATH-1025", "MATH-1021"],
+      ["MATH-2015", "MATH-2310"]
+    ],
+    "courseCreditExclusions": ["EECS-3404", "EECS-4404"]
   },
   "EECS-3421": {
     "id": "EECS-3421",
@@ -320,24 +274,6 @@
     "prerequisites": [],
     "courseCreditExclusions": []
   },
-  "EECS-3910": {
-    "id": "EECS-3910",
-    "title": "Industry Practicum",
-    "year": 3,
-    "description": "This course is only available to students in the Industry Partnership Stream of the Computer Science Honours BSc (enrollment by permission). Students in the stream may enroll in the course during a term for which they are employed by the industrial partner. The learning outcomes of the course will be approved by the instructor prior to enrollment. Prerequisites: EECS credits in the 2000 level.",
-    "credits": 3,
-    "prerequisites": [],
-    "courseCreditExclusions": []
-  },
-  "EECS-3911": {
-    "id": "EECS-3911",
-    "title": "Industry Practicum",
-    "year": 3,
-    "description": "This course is only available to students in the Industry Partnership Stream of the Computer Science Honours BSc (enrollment by permission). Students in the stream may enroll in the course during a term for which they are employed by the industrial partner. The learning outcomes of the course will be approved by the instructor prior to enrollment. Prerequisites: EECS credits in the 2000 level.",
-    "credits": 3,
-    "prerequisites": [],
-    "courseCreditExclusions": []
-  },
   "EECS-4070": {
     "id": "EECS-4070",
     "title": "Directed Studies",
@@ -380,16 +316,6 @@
       "ENG-4000"
     ]
   },
-  "EECS-4090 ": {
-    "id": "EECS-4090 ",
-    "title": "Software Development Capstone Project",
-    "year": 4,
-    "description": "Large-scale project involving all stages of the software development life cycle: requirements, analysis and design, implementation, testing and delivery. Team work. Open only to students in the Software Development Stream. Prerequisites: LE/EECS 3311 3.00 (with minimum grade of B), LE/EECS 3101 3.00, LE/EECS 3342 3.00. Corequisites: LE/EECS 4312 3.00, LE/EECS 4313 3.00.",
-    "credits": 6,
-    "prerequisites": [["EECS-3311"], ["EECS-3101"], ["EECS-3342"]],
-    "courseCreditExclusions": [],
-    "co-requisites": [["EECS-4312"], ["EECS-4313"]]
-  },
   "EECS-4101": {
     "id": "EECS-4101",
     "title": "Advanced Data Structures",
@@ -399,22 +325,13 @@
     "prerequisites": [["EECS-2030", "EECS-1030"], ["EECS-2001"], ["EECS-3101"]],
     "courseCreditExclusions": []
   },
-  "EECS-4111 ": {
-    "id": "EECS-4111 ",
-    "title": "Automata and Computability",
+  "EECS-4141": {
+    "id": "EECS-4141",
+    "title": "Introduction to Quantum Computing",
     "year": 4,
-    "description": "Introduction to more advanced topics in theoretical foundations of computer science, including the study of formal languages and automata, formal models of computation, and computational complexity measures. Integrated with: GS/CSE 5111 3.00. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 2001 3.00, LE/EECS 3101 3.00. Previously offered as: LE/CSE 4111 3.00.",
+    "description": "This course presents an overview of the quantum computing field without assuming any prior exposure to quantum mechanics. Drawing parallels between quantum and classical computing, the course covers the physical layer briefly before moving to quantum gates, the circuit model, and quantum algorithms. Quantum information is covered through applications. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"), SC/MATH 1025 3.00, LE/EECS 2021 4.00, LE/EECS 3101 3.00.",
     "credits": 3,
-    "prerequisites": [["EECS-2030", "EECS-1030"], ["EECS-2001"], ["EECS-3101"]],
-    "courseCreditExclusions": []
-  },
-  "EECS-4115 ": {
-    "id": "EECS-4115 ",
-    "title": "Computational Complexity",
-    "year": 4,
-    "description": "Study of time and space and other computational resources required for efficient solution of classes of computational problems, including P and NP, PSPACE. Proof techniques including diagonalization, simulation, reduction and completeness. Models of computation, nondeterminism, randomness. Intractability. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 2001 3.00; LE/EECS 3101 3.00. Previously offered as: LE/CSE 4115 3.00.",
-    "credits": 3,
-    "prerequisites": [["EECS-2030", "EECS-1030"], ["EECS-2001"], ["EECS-3101"]],
+    "prerequisites": [["MATH-1025"], ["EECS-2021"], ["EECS-3101"]],
     "courseCreditExclusions": []
   },
   "EECS-4161": {
@@ -427,6 +344,15 @@
     "courseCreditExclusions": [],
     "crossListedAs": "MATH-4161"
   },
+  "EECS-4171": {
+    "id": "EECS-4171",
+    "title": "Advanced Topics in Algorithms",
+    "year": 4,
+    "description": "This course will cover two or three topics selected from the following list. - Approximation algorithms for NP-hard problems, which may not find optimal solutions, but are guaranteed to be close to optimal. - Online algorithms, where the input arrives piece by piece and irrevocable decisions about the output must be made before the entire input is known. - Randomized algorithms, which make use of random choices and can sometimes be simpler than their deterministic counterparts while solving the problem with high probability or with good expected resource usage. - Parametrized algorithms, whose complexity is studied in finer detail to see how it depends on multiple parameters, rather than just input size, which can lead to good performance for certain classes of inputs. - Concurrent algorithms, where several processes cooperate to solve a problem and must deal with the difficulties of asynchrony, failures and partial knowledge of the system-wide state. - Parallel algorithms, where many processes operate synchronously on data in shared memory to solve a problem much more quickly than a single process can solve it. - Algorithmic game theory and mechanism design, where algorithms must be designed for multiple agents who have different goals. - Computational geometry, where the goal is to solve problems related to geometric objects such as points, lines, polygons and solid figures. - Combinatorial optimization algorithms for maximizing or minimizing some objective function over a finite set of objects Prerequisite: Cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 3101 3.00 ; SC/MATH 2030 3.00",
+    "credits": 3,
+    "prerequisites": [["EECS-3101"], ["MATH-2030"]],
+    "courseCreditExclusions": []
+  },
   "EECS-4201": {
     "id": "EECS-4201",
     "title": "Computer Architecture",
@@ -436,52 +362,17 @@
     "prerequisites": [["EECS-3201"], ["EECS-3221"]],
     "courseCreditExclusions": []
   },
-  "EECS-4214": {
-    "id": "EECS-4214",
-    "title": "Digital Communications",
+  "EECS-4302": {
+    "id": "EECS-4302",
+    "title": "Compilers and Interpreters",
     "year": 4,
-    "description": "Introduces fundamental principles underlying design and analysis of digital communication systems. Develops mathematical/physical understanding from the information source through the transmitter, channel, receiver, and information sink. Topics include baseband transmission, matched filtering, modulation, channel coding, and spread spectrum. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"), LE/EECS 3213 3.00, One of SC/MATH 2030 3.00 or SC/MATH 2930 3.00, One of LE/EECS 3451 4.00, LE/EECS 3602 4.00, LE/ESSE 4020 3.00, SC/MATH 4830 3.00, SC/PHYS 4060 3.00 or SC/PHYS 4250 3.00. Previously offered as: LE/CSE 4214 4.00. PRIOR TO SUMMER 2013: course credit exclusion: SC/CSE 4214 4.00.",
-    "credits": 4,
+    "description": "Principles and design techniques for compilers and interpreters. Compiler organization, compiler writing tools, scanning, parsing, semantic analysis, run-time storage organization, memory management, code generation and optimization. Students implement a substantial portion of a compiler in a project. Prerequisites: Cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 2101 3.00 or LE/EECS 2011 3.00; LE/EECS 3301 3.00 is recommended.",
+    "credits": 3,
     "prerequisites": [
-      ["EECS-3213"],
-      ["MATH-2030", "MATH-2930"],
-      [
-        "EECS-3451",
-        "EECS-3602",
-        "ESSE-4020",
-        "MATH-4830",
-        "PHYS-4060",
-        "PHYS-4250"
-      ]
+      ["EECS-2030", "EECS-1030"],
+      ["EECS-2101", "EECS-2011"]
     ],
     "courseCreditExclusions": []
-  },
-  "EECS-4215": {
-    "id": "EECS-4215",
-    "title": "Mobile Communications",
-    "year": 4,
-    "description": "Provides an overview of the latest developments and trends in wireless mobile communications, and addresses the impact of wireless transmission and user mobility on the design and management of wireless mobile systems. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 3213 3.00.",
-    "credits": 3,
-    "prerequisites": [["EECS-2030", "EECS-1030"], ["EECS-3213"]],
-    "courseCreditExclusions": []
-  },
-  "EECS-4222": {
-    "id": "EECS-4222",
-    "title": "Distributed Computing Systems",
-    "year": 4,
-    "description": "This is an introductory course in Distributed Computing Systems. This course is the study of how to design and implement a computer system where the state of the system is divided over multiple computing nodes. More specifically, this course teaches design and implementation techniques that enable the building functional, fast, fault-tolerant and scalable distributed systems. To make the issues more concrete, the class includes project(s) requiring significant design and implementation which enables students to gain practical experience in designing, implementing, and debugging real distributed systems. Topics may include, distributed communication models, distributed file systems, replication, consistency models, fault tolerance, QoS and performance, scheduling, concurrency, agreement and commitment, Paxos-based consensus, MapReduce and NoSQL datastores, decentralized systems and cloud computing systems. Prerequisites: LE/EECS 3101 3.00, LE/EECS 3213 3.00 or LE/EECS 3214 3.00, LE/EECS 3221 3.00.",
-    "credits": 3,
-    "prerequisites": [["EECS-3101"], ["EECS-3213", "EECS-3214"], ["EECS-3221"]],
-    "courseCreditExclusions": []
-  },
-  "EECS-4312": {
-    "id": "EECS-4312",
-    "title": "Software Engineering Requirements",
-    "year": 4,
-    "description": "This course deals with the elicitation, specification and analysis of software requirements and provides a critical description of available methods and tools, and practical exercises on applying these methods and tools to realistic problems. Three lecture hours per week. One laboratory hour per week. One term. Three credits. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 3311 3.00. Course credit exclusions: LE/CSE 4312 3.00, AK/AS/SC/CSE 4312 3.00.",
-    "credits": 3,
-    "prerequisites": [["EECS-2030", "EECS-1030"], ["EECS-3311"]],
-    "courseCreditExclusions": ["CSE-4312"]
   },
   "EECS-4313": {
     "id": "EECS-4313",
@@ -501,15 +392,6 @@
     "prerequisites": [["EECS-2030", "EECS-1030"], ["EECS-3311"]],
     "courseCreditExclusions": []
   },
-  "EECS-4315": {
-    "id": "EECS-4315",
-    "title": "Mission-Critical Systems",
-    "year": 4,
-    "description": "Theory and practical tools underlying deductive and algorithmic methods for ensuring the safety and correctness of mission critical systems (e.g. medical systems, nuclear reactors and train systems) with the practical ability to use verification tools to perform software certification. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 3342 3.00.",
-    "credits": 3,
-    "prerequisites": [["EECS-2030", "EECS-1030"], ["EECS-3342"]],
-    "courseCreditExclusions": []
-  },
   "EECS-4401": {
     "id": "EECS-4401",
     "title": "Artificial Intelligence",
@@ -517,18 +399,6 @@
     "description": "This is a second course in Artificial intelligence that covers selected topics in this area such as: reasoning about action and planning, uncertain and fuzzy reasoning, knowledge representation, automated reasoning, non-monotonic reasoning and answer set programming, ontologies and description logic, local search methods, Markov decision processes, autonomous agents and multi-agent systems, machine learning, reasoning about beliefs and goals, and expert systems. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; LE/EECS 3401 3.00.",
     "credits": 3,
     "prerequisites": [["EECS-2030", "EECS-1030"], ["EECS-3401"]],
-    "courseCreditExclusions": []
-  },
-  "EECS-4404": {
-    "id": "EECS-4404",
-    "title": "Introduction to Machine Learning and Pattern Recognition",
-    "year": 4,
-    "description": "Machine learning is the study of algorithms that learn how to perform a task from prior experience. This course introduces the student to machine learning concepts and techniques applied to pattern recognition problems in a diversity of application areas. Prerequisites: cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); LE/EECS 2030 3.00 or LE/EECS 1030 3.00; one of SC/MATH 2030 3.00 or SC/MATH 2930 3.00 or SC/MATH 1131 3.00.",
-    "credits": 3,
-    "prerequisites": [
-      ["EECS-2030", "EECS-1030"],
-      ["MATH-2030", "MATH-2930", "MATH-1131"]
-    ],
     "courseCreditExclusions": []
   },
   "EECS-4411": {
@@ -595,15 +465,6 @@
     "prerequisites": [["MATH-1025"], ["MATH-1310"], ["EECS-2031"]],
     "courseCreditExclusions": []
   },
-  "EECS-4422": {
-    "id": "EECS-4422",
-    "title": "Computer Vision",
-    "year": 4,
-    "description": "Fundamental concepts of Computer vision and including aspects of biological vision, image formation process, image processing, feature extraction and matching, 3-D parameter estimation, applications and statistical techniques. Twelve supervised laboratory hours. Prerequisites: Cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); SC/MATH1025 3.00; SC/MATH1310 3.00; LE/EECS2031 3.00 or LE/EECS 2032 4.00.",
-    "credits": 3,
-    "prerequisites": [["MATH-1025"], ["MATH-1310"], ["EECS-2031", "EECS-2032"]],
-    "courseCreditExclusions": []
-  },
   "EECS-4441": {
     "id": "EECS-4441",
     "title": "Human-Computer Interaction",
@@ -640,22 +501,6 @@
     "prerequisites": [["EECS-2031"]],
     "courseCreditExclusions": []
   },
-  "EECS-4480": {
-    "id": "EECS-4480",
-    "title": "Computer Security Project",
-    "year": 4,
-    "description": "This is a capstone project course for computer security students. The students engage in a significant research and/or development project that has major computer security considerations. Prerequisites: Restricted to students in the Computer Security degree. Students must have passed 40 EECS or CSE credits. Permission of the Instructor is needed. Course credit exclusions: LE/EECS 4080 3.00; LE/EECS 4081 6.00; LE/EECS 4082 6.00; LE/EECS 4084 6.00; LE/EECS 4088 6.00; LE/EECS 4700 6.00. PRIOR TO FALL 2014: course credit exclusions: LE/CSE 4080 3.00, LE/CSE 4081 6.00, LE/CSE 4084 6.00, LE/CSE 4088 6.00, LE/CSE 4700 6.00, LE/CSE 4082 6.00. PRIOR TO SUMMER 2013: course credit exclusions: SC/CSE 4080 3.00, SC/CSE 4081 6.00, SC/CSE 4084 6.00, SC/CSE 4088 6.00, SC/CSE 4700 6.00, SC/CSE 4082 6.00.",
-    "credits": 3,
-    "prerequisites": [],
-    "courseCreditExclusions": [
-      "EECS-4080",
-      "EECS-4081",
-      "EECS-4082",
-      "EECS-4084",
-      "EECS-4088",
-      "EECS-4700"
-    ]
-  },
   "EECS-4481": {
     "id": "EECS-4481",
     "title": "Computer Security Laboratory",
@@ -672,33 +517,6 @@
     "description": "This course provides a comprehensive coverage of theoretical and practical aspects of network security and forensics. The emphasis is on the limitations and attacks against network protocols and architectures most widely used in practice, as well as the best known detection, prevention and remediation techniques against these attacks. The course also has a strong emphasis on hands-on learning either by using already existing real-world tools or by developing new custom software. Familiarity with the TCP/IP protocol suite and basic computer networking concepts is required. Prerequisites: LE/EECS 3213 3.00 or LE/EECS 3214 3.00 and LE/EECS 3482 3.00.",
     "credits": 3,
     "prerequisites": [["EECS-3213", "EECS-3214"], ["EECS-3482"]],
-    "courseCreditExclusions": []
-  },
-  "EECS-4486": {
-    "id": "EECS-4486",
-    "title": "Technological Countermeasures to Financial Crimes",
-    "year": 4,
-    "description": "Financial technology is an emerging industry that aims to replace or enhance traditional financial services with technological solutions. While financial technology aims to make financial services more accessible to the general public, it is also a crucial component in the fight against financial crimes. The rapid advancement of technology and digital transformation has contributed to the growth and complexity of financial crimes. This course provides an overview of financial crimes and examines key technologies used to combat them. * Students gain a broad view of financial crimes including history, definitions, methodologies, financial intelligence units, regulations, and financial crime investigation. Various concepts such as Know Your Customer, Customer Due Diligence, Anti-Money Laundering, Combating the Financing of Terrorism, regulatory reporting, and risk assessment will be covered. * Students study current and emerging key technologies employed to identify and combat financial crimes such as artificial intelligence, machine learning, natural language processing, big data analytics, distributed ledgers, virtual currency, and privacy enhancing technologies. * Students apply the technologies to solve real-world problems via case studies and projects. * Students benefit from many experiential education opportunities via guest lecturers from industry, and case studies and projects suggested and mentored by volunteer professionals currently working in the field. This course is suitable for students who intend to pursue a career in banking, accounting, finance, financial technology, anti-money laundering, fraud management, corporate security, law enforcement, compliance, policy making, and cyber-security. Prerequisites: Cumulative grade point average of 4.5 or higher over all major EECS courses; LE/EECS 2101 3.00 or LE/EECS 2011 3.00.",
-    "credits": 3,
-    "prerequisites": [["EECS-2101"], ["EECS-2011"]],
-    "courseCreditExclusions": []
-  },
-  "EECS-4910": {
-    "id": "EECS-4910",
-    "title": "Industry Practicum",
-    "year": 4,
-    "description": "This course is only available to students in the Industry Partnership Stream of the Computer Science Honours BSc (enrollment by permission). Students in the stream may enroll in the course during a term for which they are employed by the industrial partner. The learning outcomes of the course will be approved by the instructor prior to enrollment. Prerequisites: EECS credits in the 3000 level.",
-    "credits": 3,
-    "prerequisites": [],
-    "courseCreditExclusions": []
-  },
-  "EECS-4911": {
-    "id": "EECS-4911",
-    "title": "Industry Practicum",
-    "year": 4,
-    "description": "This course is only available to students in the Industry Partnership Stream of the Computer Science Honours BSc (enrollment by permission). Students in the stream may enroll in the course during a term for which they are employed by the industrial partner. The learning outcomes of the course will be approved by the instructor prior to enrollment. Prerequisites: EECS credits in the 3000 level.",
-    "credits": 3,
-    "prerequisites": [["EECS-2101"], ["EECS-2011"]],
     "courseCreditExclusions": []
   },
   "MATH-1013": {
