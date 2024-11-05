@@ -571,7 +571,12 @@
     "description": "Displaying and describing distributions; relations in categorical data; Simpson's paradox and the need for design; experimental design and sampling design; randomization; probability laws and models; central limit theorem; statistical inference including confidence intervals and tests of significance; matched pairs; simulation. Prerequisite: At least one 12U mathematics course or equivalent is recommended. Course credit exclusion: SC/MATH 2560 3.00, SC/MATH 2930 3.00, GL/MATH/MODR 1610 3.00, SC/BIOL 2060 3.00",
     "credits": 3,
     "prerequisites": [],
-    "courseCreditExclusions": ["MATH-2560", "MATH-2930", "MATH_1610", "BIOL-2060"]
+    "courseCreditExclusions": [
+      "MATH-2560",
+      "MATH-2930",
+      "MATH_1610",
+      "BIOL-2060"
+    ]
   },
   "MATH-2030": {
     "id": "MATH-2030",
@@ -631,7 +636,18 @@
     "description": "The aim of this course is to give students in various disciplines some fundamental tools in statistical inference. Students will understand when and how to use statistical tools such as the z, t or chi-squared tests, regression analysis, analysis of variance and various other techniques. Students will learn how to use the statistical software R for data analysis. Prerequisites: High school MATH 11U or MATH 11U/C. Course credit exclusions: SC/MATH 2930 3.00, SC/BIOL 2060 3.00, AP/ECON 2500 3.00, AP/SC/GEOG 2420 3.00, HH/KINE 2050 3.00, SC/MATH 2560 3.00, SC/MATH 2570 3.00, HH/PSYC 2020 6.00, SB/OMIS 1000 3.00. NCR note: Students who have passed SC/MATH 1131 3.00 may not take SC/MATH 2565 3.00.",
     "credits": 3,
     "prerequisites": [],
-    "courseCreditExclusions": ["MATH-2930", "BIOL-2060", "ECON-2500", "GEOG-2420", "KINE-2050", "MATH-2560", "MATH-2570", "PSYC-2020", "OMIS-1000", "MATH-1131"]
+    "courseCreditExclusions": [
+      "MATH-2930",
+      "BIOL-2060",
+      "ECON-2500",
+      "GEOG-2420",
+      "KINE-2050",
+      "MATH-2560",
+      "MATH-2570",
+      "PSYC-2020",
+      "OMIS-1000",
+      "MATH-1131"
+    ]
   },
   "MATH-3171": {
     "id": "MATH-3171",
@@ -639,8 +655,17 @@
     "year": 3,
     "description": "Introduces students to linear optimization (linear programming), including the problem formulation, simplex method, LP-duality theory, sensitivity analysis, and its business and industrial applications. Prerequisites: SC/MATH 1021 3.00 or SC/MATH 1025 3.00 or SC/MATH 2221 3.00. Course credit exclusions: AP/ECON 3120 3.00, AP/ADMS 3331 3.00, AP/ADMS 3351 3.00, GL/MATH 3660 6.00, SC/MATH 3170 6.00 (prior to Winter 2016).",
     "credits": 3,
-    "prerequisites": [["MATH-2015", "MATH-2310"], ["MATH-1021", "MAH-1025", "MATH-2221"]],
-    "courseCreditExclusions": ["ECON-3120", "ADMS-3331", "ADMS-3351", "MATH-3660", "MATH-3170"]
+    "prerequisites": [
+      ["MATH-2015", "MATH-2310"],
+      ["MATH-1021", "MAH-1025", "MATH-2221"]
+    ],
+    "courseCreditExclusions": [
+      "ECON-3120",
+      "ADMS-3331",
+      "ADMS-3351",
+      "MATH-3660",
+      "MATH-3170"
+    ]
   },
   "MATH-3330": {
     "id": "MATH-3330",
@@ -648,7 +673,10 @@
     "year": 3,
     "description": "Simple regression analysis, multiple regression analysis, matrix form of the multiple regression model, estimation, tests (t- and F-tests), multicollinearity and other problems encountered in regression, diagnostics, model building and variable selection, remedies for violations of regression assumptions. Prerequisites: One of SC/MATH 1131 3.00, SC/MATH 2570 3.00, HH/PSYC 2020 6.00, or equivalent; some acquaintance with matrix algebra (such as is provided in SC/MATH 1021 3.00, SC/MATH 1025 3.00, SC/MATH 1505 6.00, SC/MATH 1550 6.00, or SC/MATH 2221 3.00). Course credit exclusions: SC/MATH 3033 3.00, AP/ECON 4210 3.00, HH/PSYC 3030 6.00.",
     "credits": 3,
-    "prerequisites": [["MATH-1131", "MATH-2570", "PSYC-2020"], ["MATH-1021", "MATH-1025", "MATH-1505", "MATH-1550", "MAH-2221"]],
+    "prerequisites": [
+      ["MATH-1131", "MATH-2570", "PSYC-2020"],
+      ["MATH-1021", "MATH-1025", "MATH-1505", "MATH-1550", "MAH-2221"]
+    ],
     "courseCreditExclusions": ["MATH-3033", "ECON-4210", "PSYC-3030"]
   },
   "PHYS-1421": {
