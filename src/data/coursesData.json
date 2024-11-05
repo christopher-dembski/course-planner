@@ -456,6 +456,15 @@
     "prerequisites": [["MATH-1025"], ["MATH-1310"], ["EECS-2031"]],
     "courseCreditExclusions": []
   },
+  "EECS-4422": {
+    "id": "EECS-4422",
+    "title": "Computer Vision",
+    "year": 4,
+    "description": "Fundamental concepts of Computer vision and including aspects of biological vision, image formation process, image processing, feature extraction and matching, 3-D parameter estimation, applications and statistical techniques. Twelve supervised laboratory hours. Prerequisites: Cumulative GPA of 4.50 or better over all major EECS courses (without second digit \"5\"); SC/MATH1025 3.00; SC/MATH1310 3.00; LE/EECS2031 3.00 or LE/EECS 2032 4.00.",
+    "credits": 3,
+    "prerequisites": [["MATH-1025"], ["MATH-1310"], ["EECS-2031", "EECS-2032"]],
+    "courseCreditExclusions": []
+  },
   "EECS-4441": {
     "id": "EECS-4441",
     "title": "Human-Computer Interaction",
